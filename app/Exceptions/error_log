@@ -1,0 +1,112 @@
+[03-Nov-2023 02:57:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 02:57:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 04:14:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 04:14:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 07:16:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 07:16:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 08:19:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 08:19:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 09:11:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 09:11:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 10:50:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 10:50:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 14:17:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 14:17:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 15:16:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 15:16:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 18:10:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 18:10:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 19:28:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 19:28:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 20:39:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[03-Nov-2023 20:39:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[05-Nov-2023 00:43:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[05-Nov-2023 00:43:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[05-Nov-2023 02:49:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[05-Nov-2023 02:49:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[05-Nov-2023 05:59:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[05-Nov-2023 05:59:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8

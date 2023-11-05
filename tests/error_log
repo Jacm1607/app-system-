@@ -1,0 +1,112 @@
+[03-Nov-2023 02:57:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 02:57:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 04:14:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 04:14:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 07:16:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 07:16:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 08:19:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 08:19:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 09:11:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 09:11:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 10:49:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 10:49:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 14:17:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 14:17:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 15:15:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 15:15:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 18:09:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 18:09:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 19:27:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 19:27:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 20:38:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[03-Nov-2023 20:38:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[05-Nov-2023 00:43:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[05-Nov-2023 00:43:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[05-Nov-2023 02:49:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[05-Nov-2023 02:49:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[05-Nov-2023 05:58:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7
+[05-Nov-2023 05:58:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/TestCase.php on line 7

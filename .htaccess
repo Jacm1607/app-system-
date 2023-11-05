@@ -1,0 +1,10 @@
+#DIRECTORYINDEX DISABLED
+#REWRITEENGINE ON
+#REWRITERULE ^$ HTTP://127.0.0.1:8000/public/ [P,L]
+#REWRITECOND %{REQUEST_FILENAME} !-F
+#REWRITECOND %{REQUEST_FILENAME} !-D
+#REWRITERULE ^(.*)$ HTTP://127.0.0.1:8000/public/$1 [P,L]
+
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
