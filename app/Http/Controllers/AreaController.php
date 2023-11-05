@@ -7,8 +7,12 @@ use App\Models\Area;
 
 class AreaController extends Controller
 {
-    public function index () {
-        $areas = Area::where('estado', '1')->get();
+    public function index (Request $request) {
+        if (isset($request->area)) {
+            $areas = Area::where('nombre', 'LIKE', "%$request->area%")->where('estado', '1')->get();
+        } else {
+            $areas = Area::where('estado', '1')->get();
+        }
         return view('area.index')->with('areas', $areas);
     }
 

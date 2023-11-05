@@ -7,8 +7,12 @@ use App\Models\Persona;
 
 class PersonaController extends Controller
 {
-    public function index () {
-        $personas = Persona::where('estado', '1')->get();
+    public function index (Request $request) {
+        if (isset($request->persona)) {
+            $personas = Persona::where('nombre', 'LIKE', "%$request->persona%")->where('estado', '1')->get();
+        } else {
+            $personas = Persona::where('estado', '1')->get();
+        }
         return view('persona.index')->with('personas', $personas);
     }
 

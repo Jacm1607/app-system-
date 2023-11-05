@@ -7,8 +7,12 @@ use App\Models\Servicio;
 
 class ServicioController extends Controller
 {
-    public function index () {
-        $servicios = Servicio::where('estado', '1')->get();
+    public function index (Request $request) {
+        if (isset($request->servicio)) {
+            $servicios = Servicio::where('nombre', 'LIKE', "%$request->servicio%")->where('estado', '1')->get();
+        } else {
+            $servicios = Servicio::where('estado', '1')->get();
+        }
         return view('servicio.index')->with('servicios', $servicios);
     }
 

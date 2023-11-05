@@ -8,8 +8,12 @@ use App\Models\Persona;
 
 class ProveedorController extends Controller
 {
-    public function index () {
-        $proveedores = Proveedor::where('estado', '1')->get();
+    public function index (Request $request) {
+        if (isset($request->proveedor)) {
+            $proveedores = Proveedor::where('razon_social', 'LIKE', "%$request->proveedor%")->where('estado', '1')->get();
+        } else {
+            $proveedores = Proveedor::where('estado', '1')->get();
+        }
         return view('proveedor.index')->with('proveedores', $proveedores);
     }
 

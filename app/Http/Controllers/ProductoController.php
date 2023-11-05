@@ -7,8 +7,12 @@ use App\Models\Producto;
 
 class ProductoController extends Controller
 {
-    public function index () {
-        $productos = Producto::where('estado', '1')->get();
+    public function index (Request $request) {
+        if (isset($request->producto)) {
+            $productos = Producto::where('nombre', 'LIKE', "%$request->producto%")->where('estado', '1')->get();
+        } else {
+            $productos = Producto::where('estado', '1')->get();
+        }
         return view('producto.index')->with('productos', $productos);
     }
 

@@ -7,8 +7,12 @@ use App\Models\Privilegio;
 
 class PrivilegioController extends Controller
 {
-    public function index () {
-        $privilegios = Privilegio::where('estado', '1')->get();
+    public function index (Request $request) {
+        if (isset($request->privilegio)) {
+            $privilegios = Privilegio::where('nombre', 'LIKE', "%$request->privilegio%")->where('estado', '1')->get();
+        } else {
+            $privilegios = Privilegio::where('estado', '1')->get();
+        }
         return view('privilegio.index')->with('privilegios', $privilegios);
     }
 

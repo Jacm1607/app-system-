@@ -8,8 +8,12 @@ use App\Models\Persona;
 
 class ClienteController extends Controller
 {
-    public function index () {
-        $clientes = Cliente::where('estado', '1')->get();
+    public function index (Request $request) {
+        if (isset($request->cliente)) {
+            $clientes = Cliente::where('razon_social', 'LIKE', "%$request->cliente%")->where('estado', '1')->get();
+        } else {
+            $clientes = Cliente::where('estado', '1')->get();
+        }
         return view('cliente.index')->with('clientes', $clientes);
     }
 
