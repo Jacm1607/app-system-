@@ -1,24 +1,3 @@
-<x-template.layout>
-    <div class="row">
-        <div class="col-lg-12 grid-margin stretch-card">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Editar Area</h4>
-                    <form method="POST" action="{{ route('area.update', $area->id) }}" class="forms-sample">
-                        @csrf
-                        @method('put')
-                       <div class="form-group">
-                          <label for="nombre_area">Nombre</label>
-                          <input type="text" class="form-control" id="nombre_area" name="nombre" placeholder="Ingresa nombre">
-                        </div>
-                        <button type="submit" class="btn btn-primary mr-2">Actualizar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</x-template.layout>
-
 <x-app-layout>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
