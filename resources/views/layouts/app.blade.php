@@ -24,7 +24,7 @@
     <!--<x-jet-banner />-->
 
     <!--<div class="min-h-screen bg-white-100">-->
-        
+
 
         <!-- Page Heading -->
         <!--{{-- @if (isset($header))-->
@@ -49,36 +49,36 @@
         <!--            </svg>-->
         <!--            <span class="ml-2">Dashboard</span>-->
         <!--        </a>-->
-                
-                
-                
-               
-                
-                    
-                
+
+
+
+
+
+
+
                 <!-- component -->
-<!-- 
+<!--
     FAQ - Frequently Asked Questions TailwindCSS Component
     with <details> and <summary> tag with custom [open] animation.
     Created by Surjith S M (@surjithctly)
-    See more components: https://web3components.dev 
+    See more components: https://web3components.dev
 -->
 
 
 
 
 
-                    
+
     <!--        </div>-->
     <!--        <div class="col-span-10">-->
     <!--            <main>-->
-                    
+
     <!--            </main>-->
     <!--        </div>-->
     <!--    </div>-->
     <!--</div>-->
-    
-    
+
+
     <!---->
     <!-- component -->
 <style>
@@ -88,7 +88,7 @@
   --light: #edf2f9;
   --dark: #152e4d;
   --darker: #12263f;
-  
+
   --color-red: #dc2626;
   --color-green: #16a34a;
   --color-blue: #6E6E6E;
@@ -175,8 +175,8 @@
                 <a
                   href="#"
                   @click="$event.preventDefault(); open = !open"
-                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-white"
-                  :class="{'bg-gray-100 dark:bg-gray-600 text-white': isActive || open}"
+                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-blue-700 dark:hover:bg-gray-600 hover:text-white"
+                  :class="{'bg-blue-400 dark:bg-blue-600 text-white': isActive || open}"
                   role="button"
                   aria-haspopup="true"
                   :aria-expanded="(open || isActive) ? 'true' : 'false'"
@@ -231,14 +231,14 @@
                   </a>
                 </div>
               </div>
-              
+
               <div x-data="{ isActive: false, open: false}">
                 <!-- active & hover classes 'bg-blue-100 dark:bg-blue-600' -->
                 <a
                   href="#"
                   @click="$event.preventDefault(); open = !open"
-                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-white"
-                  :class="{'bg-gray-100 dark:bg-gray-600 text-white': isActive || open}"
+                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-blue-700 dark:hover:bg-gray-600 hover:text-white"
+                  :class="{'bg-blue-400 dark:bg-gray-600 text-white': isActive || open}"
                   role="button"
                   aria-haspopup="true"
                   :aria-expanded="(open || isActive) ? 'true' : 'false'"
@@ -293,15 +293,15 @@
                   </a>
                 </div>
               </div>
-              
-              
+
+
               <div x-data="{ isActive: false, open: false}">
                 <!-- active & hover classes 'bg-blue-100 dark:bg-blue-600' -->
                 <a
                   href="#"
                   @click="$event.preventDefault(); open = !open"
-                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-white"
-                  :class="{'bg-gray-100 dark:bg-gray-600 text-white': isActive || open}"
+                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-blue-700 dark:hover:bg-gray-600 hover:text-white"
+                  :class="{'bg-blue-400 dark:bg-gray-600 text-white': isActive || open}"
                   role="button"
                   aria-haspopup="true"
                   :aria-expanded="(open || isActive) ? 'true' : 'false'"
@@ -363,8 +363,8 @@
                 <a
                   href="#"
                   @click="$event.preventDefault(); open = !open"
-                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-white"
-                  :class="{'bg-gray-100 dark:bg-gray-600 text-white': isActive || open}"
+                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-blue-700 dark:hover:bg-gray-600 hover:text-white"
+                  :class="{'bg-blue-400 dark:bg-gray-600 text-white': isActive || open}"
                   role="button"
                   aria-haspopup="true"
                   :aria-expanded="(open || isActive) ? 'true' : 'false'"
@@ -543,9 +543,9 @@
                     </svg>
                   </div>
                 </button>
-                
+
                 <!--
-                
+
                 <button
                   @click="openNotificationsPanel"
                   class="p-2 text-blue-400 transition-colors duration-200 rounded-full bg-blue-50 hover:text-blue-600 hover:bg-blue-100 dark:hover:text-light dark:hover:bg-blue-700 dark:bg-dark focus:outline-none focus:bg-blue-100 dark:focus:bg-blue-700 focus:ring-blue-800"
@@ -591,7 +591,7 @@
                   </svg>
                 </button>
 
-                
+
                 <button
                   @click="openSettingsPanel"
                   class="p-2 text-blue-400 transition-colors duration-200 rounded-full bg-blue-50 hover:text-blue-600 hover:bg-blue-100 dark:hover:text-light dark:hover:bg-blue-700 dark:bg-dark focus:outline-none focus:bg-blue-100 dark:focus:bg-blue-700 focus:ring-blue-800"
@@ -619,7 +619,7 @@
                     />
                   </svg>
                 </button>
-                
+
                 -->
 
                 <!-- User avatar button -->
@@ -1228,7 +1228,7 @@
           aria-hidden="true"
         ></div>
         <!-- Panel -->
-        <section
+        {{-- <section
           x-transition:enter="transition duration-300 ease-in-out transform sm:duration-500"
           x-transition:enter-start="translate-x-full"
           x-transition:enter-end="translate-x-0"
@@ -1342,7 +1342,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> --}}
 
         <!-- Notification panel -->
         <!-- Backdrop -->

@@ -4,7 +4,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between">
                     <div class="mb-6">
-                        <h1 class="text-2xl dark:text-gray-700">Listas de Clientes</h1>
+                        <h1 class="text-2xl text-gray-700">Listas de Clientes</h1>
                         <hr>
                     </div>
                     <div class="">

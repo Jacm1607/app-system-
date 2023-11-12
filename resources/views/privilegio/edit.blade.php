@@ -4,7 +4,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between">
                     <div class="mb-6">
-                        <h1 class="text-2xl dark:text-gray-700">Actualizar Privilegio</h1>
+                        <h1 class="text-2xl text-gray-700">Actualizar Privilegio</h1>
                         <hr>
                     </div>
                     <div class="">
@@ -17,10 +17,10 @@
                    <div class="grid grid-cols-4">
                         <div class=" col-span-1">
                             <p>
-                                <label class="dark:text-gray-700" for="nombre_privilegio">Nombre</label>
+                                <label class="text-gray-700" for="nombre_privilegio">Nombre</label>
                             </p>
                             <p>
-                          <input type="text" class="w-full rounded-xl dark:text-gray-700" id="nombre_privilegio" name="nombre" value="{{$privilegio->nombre}}" placeholder="Ingresa nombre">
+                          <input type="text" class="w-full rounded-xl text-gray-700" id="nombre_privilegio" name="nombre" value="{{$privilegio->nombre}}" placeholder="Ingresa nombre">
                             </p>
                         </div>
                     </div>

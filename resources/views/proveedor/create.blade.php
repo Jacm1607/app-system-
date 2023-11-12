@@ -4,7 +4,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between">
                     <div class="mb-6">
-                        <h1 class="text-2xl dark:text-gray-700">Crear Proveedor</h1>
+                        <h1 class="text-2xl text-gray-700">Crear Proveedor</h1>
                         <hr>
                     </div>
                     <div class="">
@@ -17,10 +17,10 @@
                     <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
-                                <label class="dark:text-gray-700" for="idPersona">Persona</label>
+                                <label class="text-gray-700" for="idPersona">Persona</label>
                             </p>
                             <p>
-                                <select class="w-full h-[45px] rounded-xl dark:text-gray-700" name="idPersona" id="idPersona">
+                                <select class="w-full h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
                                     @forelse ($personas as $persona)
                                         <option value="{{ $persona->id }}">{{ $persona->nombre }}
                                             {{ $persona->apellido }}</option>
@@ -32,10 +32,10 @@
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label class="dark:text-gray-700" for="razon_social">Razon Social</label>
+                                <label class="text-gray-700" for="razon_social">Razon Social</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl dark:text-gray-700" id="razon_social" name="razon_social"
+                                <input type="text" class="w-full rounded-xl text-gray-700" id="razon_social" name="razon_social"
                                     placeholder="Ingresa razon social">
                             </p>
                              @error('razon_social')
@@ -44,10 +44,10 @@
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label class="dark:text-gray-700" for="empresa">Empresa</label>
+                                <label class="text-gray-700" for="empresa">Empresa</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl dark:text-gray-700" id="empresa" name="empresa"
+                                <input type="text" class="w-full rounded-xl text-gray-700" id="empresa" name="empresa"
                                     placeholder="Ingresa empresa">
                             </p>
                              @error('empresa')
