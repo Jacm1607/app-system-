@@ -24,9 +24,11 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $fillable = [
+        'idPersona',
         'name',
         'email',
         'password',
+        'estado'
     ];
 
     /**
@@ -58,4 +60,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function persona()
+    {
+        return $this->hasOne(Persona::class, 'id', 'idPersona');
+    }
 }

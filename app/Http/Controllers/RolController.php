@@ -1,0 +1,60 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Rol;
+use App\Models\Privilegio;
+
+class RolController extends Controller
+{
+    public function index (Request $request) {
+        if (isset($request->nombre)) {
+            $roles = Rol::where('nombre', 'LIKE', "%$request->nombre%")->where('estado', '1')->get();
+        } else {
+            $roles = Rol::where('estado', '1')->get();
+        }
+        return view('rol.index')->with('roles', $roles);
+    }
+
+    public function create() {
+        $privilegios = Privilegio::where('estado', '1')->get();
+        return view('rol.create')->with('privilegios', $privilegios);
+    }
+
+    public function store(Request $request) {
+        $request->validate([
+            'nombre' => 'required|unique:roles,nombre|max:255',
+        ],[
+            'nombre.unique' => 'Este nombre ya esta siendo usado.',
+            'nombre.required' => 'Campo requerido.'
+        ]);
+        $rol = new Rol();
+        $rol->nombre = $request->nombre;
+        $rol->save();
+        $rol->privilegios()->attach($request->idPrivilegio);
+        return redirect()->route('rol.index');
+    }
+
+    public function edit ($id) {
+        $privilegios = Privilegio::where('estado', '1')->get();
+        $rol = Rol::findOrFail($id);
+        return view('rol.edit')->with('rol', $rol)->with('privilegios', $privilegios);
+    }
+
+    public function update (Request $request, $id) {
+        $rol = Rol::findOrFail($id);
+        $rol->nombre = $request->nombre;
+        $rol->update();
+        $rol->privilegios()->detach();
+        $rol->privilegios()->attach($request->idPrivilegio);
+        return redirect()->route('rol.index');
+    }
+
+    public function delete ($id) {
+        $rol = Rol::findOrFail($id);
+        $rol->estado = '0';
+        $rol->update();
+        return redirect()->route('rol.index');
+    }
+}

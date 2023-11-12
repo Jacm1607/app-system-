@@ -9,4 +9,14 @@ class Privilegio extends Model
 {
     use HasFactory;
     protected $fillable = ['nombre', 'estado'];
+
+    /**
+     * The roles that belong to the Privilegio
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function roles(): BelongsToMany
+    {
+        return $this->belongsToMany(Rol::class, 'rol_privilegio', 'idRol', 'idPrivilegio');
+    }
 }

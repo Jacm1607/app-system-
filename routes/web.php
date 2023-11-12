@@ -8,6 +8,8 @@ use App\Http\Controllers\AreaController;
 use App\Http\Controllers\PersonaController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ProveedorController;
+use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\RolController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,4 +82,18 @@ Route::middleware([
     Route::get('/proveedor/edit/{id}', [ProveedorController::class , 'edit'])->name('proveedor.edit');
     Route::put('/proveedor/update/{id}', [ProveedorController::class , 'update'])->name('proveedor.update');
     Route::get('/proveedor/delete/{id}', [ProveedorController::class , 'delete'])->name('proveedor.delete');
+
+    Route::get('/usuario/index', [UsuarioController::class , 'index'])->name('usuario.index');
+    Route::get('/usuario/create', [UsuarioController::class , 'create'])->name('usuario.create');
+    Route::post('/usuario/store', [UsuarioController::class , 'store'])->name('usuario.store');
+    Route::get('/usuario/edit/{id}', [UsuarioController::class , 'edit'])->name('usuario.edit');
+    Route::put('/usuario/update/{id}', [UsuarioController::class , 'update'])->name('usuario.update');
+    Route::get('/usuario/delete/{id}', [UsuarioController::class , 'delete'])->name('usuario.delete');
+
+    Route::get('/rol/index', [RolController::class , 'index'])->name('rol.index');
+    Route::get('/rol/create', [RolController::class , 'create'])->name('rol.create');
+    Route::post('/rol/store', [RolController::class , 'store'])->name('rol.store');
+    Route::get('/rol/edit/{id}', [RolController::class , 'edit'])->name('rol.edit');
+    Route::put('/rol/update/{id}', [RolController::class , 'update'])->name('rol.update');
+    Route::get('/rol/delete/{id}', [RolController::class , 'delete'])->name('rol.delete');
 });
