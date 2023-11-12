@@ -21,6 +21,12 @@ class PrivilegioController extends Controller
     }
 
     public function store(Request $request) {
+        $request->validate([
+            'nombre' => 'required|unique:privilegios,nombre|max:255',
+        ],[
+            'nombre.unique' => 'Este nombre ya esta siendo usado.',
+            'nombre.required' => 'Campo requerido.'
+        ]);
         $privilegio = new Privilegio();
         $privilegio->nombre = $request->nombre;
         $privilegio->save();

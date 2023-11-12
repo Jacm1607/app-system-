@@ -1,10 +1,10 @@
 <x-app-layout>
-    <div class="py-12">
+    <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between">
                     <div class="mb-6">
-                        <h1 class="text-2xl">Crear Proveedor</h1>
+                        <h1 class="text-2xl dark:text-gray-700">Crear Proveedor</h1>
                         <hr>
                     </div>
                     <div class="">
@@ -17,10 +17,10 @@
                     <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
-                                <label for="idPersona">Persona</label>
+                                <label class="dark:text-gray-700" for="idPersona">Persona</label>
                             </p>
                             <p>
-                                <select class="w-full h-[45px] rounded-xl" name="idPersona" id="idPersona">
+                                <select class="w-full h-[45px] rounded-xl dark:text-gray-700" name="idPersona" id="idPersona">
                                     @forelse ($personas as $persona)
                                         <option value="{{ $persona->id }}">{{ $persona->nombre }}
                                             {{ $persona->apellido }}</option>
@@ -32,21 +32,27 @@
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label for="razon_social">Razon Social</label>
+                                <label class="dark:text-gray-700" for="razon_social">Razon Social</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl" id="razon_social" name="razon_social"
+                                <input type="text" class="w-full rounded-xl dark:text-gray-700" id="razon_social" name="razon_social"
                                     placeholder="Ingresa razon social">
                             </p>
+                             @error('razon_social')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label for="empresa">Empresa</label>
+                                <label class="dark:text-gray-700" for="empresa">Empresa</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl" id="empresa" name="empresa"
+                                <input type="text" class="w-full rounded-xl dark:text-gray-700" id="empresa" name="empresa"
                                     placeholder="Ingresa empresa">
                             </p>
+                             @error('empresa')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="flex justify-end">

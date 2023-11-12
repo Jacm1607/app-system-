@@ -1,10 +1,10 @@
 <x-app-layout>
-    <div class="py-12">
+    <div class="py-4">
         <div class="w-full mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between">
                     <div class="mb-6">
-                        <h1 class="text-2xl">Listas de Servicios</h1>
+                        <h1 class="text-2xl dark:text-gray-700">Listas de Servicios</h1>
                         <hr>
                     </div>
                     <div class="">
@@ -29,11 +29,11 @@
                                     <thead class="bg-white border-b">
                                         <tr>
                                             <th scope="col"
-                                                class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                                class="text-sm font-normal text-gray-900 px-6 py-4 text-left">
                                                 Nombre
                                             </th>
                                             <th scope="col"
-                                                class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                                class="text-sm font-normal text-gray-900 px-6 py-4 text-left">
                                                 Opciones
                                             </th>
                                         </tr>
@@ -41,11 +41,11 @@
                                     <tbody>
                                         @forelse ($servicios as $servicio)
                                             <tr>
-                                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $servicio->nombre }}
+                                                <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">{{ $servicio->nombre }}
                                                 </td>
-                                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 space-x-4">
-                                                    <a href="{{ route('servicio.edit', $servicio->id) }}">Editar</a>
-                                                    <a href="{{ route('servicio.delete', $servicio->id) }}">Eliminar</a>
+                                                <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
+                                                    <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('servicio.edit', $servicio->id) }}">✏ Editar</a>
+                                                    <a class="p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('servicio.delete', $servicio->id) }}">🗑 Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty

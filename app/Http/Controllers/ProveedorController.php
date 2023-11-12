@@ -23,6 +23,15 @@ class ProveedorController extends Controller
     }
 
     public function store(Request $request) {
+        $request->validate([
+            'razon_social' => 'required|unique:proveedores,razon_social|max:255',
+            'empresa' => 'required|unique:proveedores,empresa|max:255',
+        ],[
+            'razon_social.unique' => 'Esta razon social ya esta siendo usada.',
+            'razon_social.required' => 'Campo requerido.',
+            'empresa.unique' => 'Esta empresa ya esta siendo usada.',
+            'empresa.required' => 'Campo requerido.'
+        ]);
         $proveedor = new Proveedor();
         $proveedor->idPersona = $request->idPersona;
         $proveedor->razon_social = $request->razon_social;

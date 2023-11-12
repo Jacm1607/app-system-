@@ -1,10 +1,10 @@
 <x-app-layout>
-    <div class="py-12">
+    <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between">
                     <div class="mb-6">
-                        <h1 class="text-2xl">Actualizar Servicios</h1>
+                        <h1 class="text-2xl dark:text-gray-700">Actualizar Servicios</h1>
                         <hr>
                     </div>
                     <div class="">
@@ -17,10 +17,10 @@
                    <div class="grid grid-cols-4">
                         <div class=" col-span-1">
                             <p>
-                                <label for="nombre_servicio">Nombre</label>
+                                <label class="dark:text-gray-700" for="nombre_servicio">Nombre</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl" id="nombre_servicio" name="nombre" placeholder="Ingresa nombre" value="{{$servicio->nombre}}">
+                                <input type="text" class="w-full rounded-xl dark:text-gray-700" id="nombre_servicio" name="nombre" placeholder="Ingresa nombre" value="{{$servicio->nombre}}">
                             </p>
                         </div>
                     </div>

@@ -23,6 +23,17 @@ class ClienteController extends Controller
     }
 
     public function store(Request $request) {
+        $request->validate([
+            'idPersona' => 'required',
+            'razon_social' => 'required|unique:clientes,razon_social|max:255',
+            'nit' => 'required|unique:clientes,razon_social|max:255',
+        ],[
+            'idPersona.required' => 'Campo requerido.',
+            'razon_social.unique' => 'Esta razon social ya esta siendo usada.',
+            'razon_social.required' => 'Campo requerido.',
+            'nit.unique' => 'Este NIT ya esta siendo usada.',
+            'nit.required' => 'Campo requerido.'
+        ]);
         $cliente = new Cliente();
         $cliente->idPersona = $request->idPersona;
         $cliente->razon_social = $request->razon_social;

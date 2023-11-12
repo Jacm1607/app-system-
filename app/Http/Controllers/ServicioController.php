@@ -21,6 +21,12 @@ class ServicioController extends Controller
     }
 
     public function store(Request $request) {
+        $request->validate([
+            'nombre' => 'required|unique:servicios,nombre|max:255',
+        ],[
+            'nombre.unique' => 'Este nombre ya esta siendo usado.',
+            'nombre.required' => 'Campo requerido.'
+        ]);
         $servicio = new Servicio();
         $servicio->nombre = $request->nombre;
         $servicio->save();

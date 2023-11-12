@@ -1,10 +1,10 @@
 <x-app-layout>
-    <div class="py-12">
+    <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between">
                     <div class="mb-6">
-                        <h1 class="text-2xl">Crear Producto</h1>
+                        <h1 class="text-2xl dark:text-gray-700">Crear Producto</h1>
                         <hr>
                     </div>
                     <div class="">
@@ -16,11 +16,14 @@
                    <div class="grid grid-cols-4">
                         <div class=" col-span-1">
                             <p>
-                                <label for="nombre_producto">Nombre</label>
+                                <label class="dark:text-gray-700" for="nombre_producto">Nombre</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl" id="nombre_producto" name="nombre" placeholder="Ingresa nombre">
+                                <input type="text" class="w-full rounded-xl dark:text-gray-700" id="nombre_producto" name="nombre" placeholder="Ingresa nombre">
                             </p>
+                             @error('nombre')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="flex justify-end">

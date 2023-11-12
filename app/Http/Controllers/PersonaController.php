@@ -21,6 +21,20 @@ class PersonaController extends Controller
     }
 
     public function store(Request $request) {
+        $request->validate([
+            'nombre' => 'required|regex:/^[a-zA-Z\s]*$/',
+            'apellido' => 'required|regex:/^[a-zA-Z\s]*$/',
+            'celular' => 'required|numeric',
+            'fecha_nac' => 'required',
+        ],[
+            'nombre.required' => 'Campo requerido.',
+            'nombre.regex' => 'Ingrese solo letras, no esta permitido otro caracteres especiales.',
+            'apellido.required' => 'Campo requerido.',
+            'apellido.regex' => 'Ingrese solo letras, no esta permitido otro caracteres especiales.',
+            'celular.required' => 'Campo requerido.',
+            'celular.numeric' => 'Ingrese solo numeros.',
+            'fecha_nac.required' => 'Campo requerido.'
+        ]);
         $persona = new Persona();
         $persona->nombre = $request->nombre;
         $persona->apellido = $request->apellido;

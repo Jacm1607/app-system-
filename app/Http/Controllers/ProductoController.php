@@ -21,6 +21,12 @@ class ProductoController extends Controller
     }
 
     public function store(Request $request) {
+        $request->validate([
+            'nombre' => 'required|unique:productos,nombre|max:255',
+        ],[
+            'nombre.unique' => 'Este nombre ya esta siendo usado.',
+            'nombre.required' => 'Campo requerido.'
+        ]);
         $producto = new Producto();
         $producto->nombre = $request->nombre;
         $producto->save();

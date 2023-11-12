@@ -21,6 +21,12 @@ class AreaController extends Controller
     }
 
     public function store(Request $request) {
+        $request->validate([
+            'nombre' => 'required|unique:areas,nombre|max:255',
+        ],[
+            'nombre.unique' => 'Este nombre ya esta siendo usado.',
+            'nombre.required' => 'Campo requerido.'
+        ]);
         $area = new Area();
         $area->nombre = $request->nombre;
         $area->save();
