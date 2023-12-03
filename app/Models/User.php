@@ -25,6 +25,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'idPersona',
+        'idRol',
         'name',
         'email',
         'password',
@@ -64,5 +65,9 @@ class User extends Authenticatable
     public function persona()
     {
         return $this->hasOne(Persona::class, 'id', 'idPersona');
+    }
+    public function rol()
+    {
+        return $this->hasOne(Rol::class, 'id', 'idRol');
     }
 }

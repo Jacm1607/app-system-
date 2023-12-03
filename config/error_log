@@ -5338,3 +5338,135 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/config/view.php on line 17
+[02-Dec-2023 23:04:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/app.php on line 16
+[02-Dec-2023 23:06:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/broadcasting.php on line 18
+[02-Dec-2023 23:06:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/cache.php on line 18
+[02-Dec-2023 23:07:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/database.php on line 18
+[02-Dec-2023 23:10:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/filesystems.php on line 16
+[02-Dec-2023 23:13:42 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Providers\RouteServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/config/fortify.php:77
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/fortify.php on line 77
+[02-Dec-2023 23:20:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/hashing.php on line 32
+[02-Dec-2023 23:39:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/fundkxhe/fabiola-spa.site/config/livewire.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/livewire.php on line 30
+[02-Dec-2023 23:43:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/logging.php on line 20
+[02-Dec-2023 23:46:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/mail.php on line 16
+[02-Dec-2023 23:50:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/queue.php on line 16
+[02-Dec-2023 23:54:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/sanctum.php on line 18
+[02-Dec-2023 23:56:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/services.php on line 18
+[03-Dec-2023 00:01:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/session.php on line 21
+[03-Dec-2023 00:05:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/fundkxhe/fabiola-spa.site/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/view.php on line 17
+[03-Dec-2023 01:49:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/app.php on line 16
+[03-Dec-2023 01:50:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/broadcasting.php on line 18
+[03-Dec-2023 01:51:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/cache.php on line 18
+[03-Dec-2023 01:52:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/database.php on line 18
+[03-Dec-2023 01:54:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/filesystems.php on line 16
+[03-Dec-2023 01:54:46 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Providers\RouteServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/config/fortify.php:77
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/fortify.php on line 77
+[03-Dec-2023 01:55:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/hashing.php on line 32
+[03-Dec-2023 01:56:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Laravel\Jetstream\Features' not found in /home/fundkxhe/fabiola-spa.site/config/jetstream.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/jetstream.php on line 65
+[03-Dec-2023 01:56:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/fundkxhe/fabiola-spa.site/config/livewire.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/livewire.php on line 30
+[03-Dec-2023 01:57:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/logging.php on line 20
+[03-Dec-2023 01:58:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/mail.php on line 16
+[03-Dec-2023 01:58:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/queue.php on line 16
+[03-Dec-2023 01:59:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/sanctum.php on line 18
+[03-Dec-2023 02:00:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/services.php on line 18
+[03-Dec-2023 02:00:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/session.php on line 21
+[03-Dec-2023 02:01:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/fundkxhe/fabiola-spa.site/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/view.php on line 17
+[03-Dec-2023 07:11:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Laravel\Jetstream\Features' not found in /home/fundkxhe/fabiola-spa.site/config/jetstream.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/jetstream.php on line 65
+[03-Dec-2023 13:08:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fundkxhe/fabiola-spa.site/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/config/services.php on line 18

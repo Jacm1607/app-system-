@@ -998,3 +998,67 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/routes/web.php on line 22
+[24-Nov-2023 23:58:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Artisan' not found in /home/fundkxhe/fabiola-spa.site/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/console.php on line 17
+[25-Nov-2023 00:05:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/web.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/web.php on line 25
+[25-Nov-2023 21:49:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/api.php on line 17
+[25-Nov-2023 22:01:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Broadcast' not found in /home/fundkxhe/fabiola-spa.site/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/channels.php on line 16
+[01-Dec-2023 19:10:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Broadcast' not found in /home/fundkxhe/fabiola-spa.site/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/channels.php on line 16
+[01-Dec-2023 19:12:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/web.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/web.php on line 25
+[01-Dec-2023 22:44:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/api.php on line 17
+[01-Dec-2023 22:44:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Artisan' not found in /home/fundkxhe/fabiola-spa.site/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/console.php on line 17
+[02-Dec-2023 13:13:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/api.php on line 17
+[02-Dec-2023 13:13:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Broadcast' not found in /home/fundkxhe/fabiola-spa.site/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/channels.php on line 16
+[02-Dec-2023 13:14:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Artisan' not found in /home/fundkxhe/fabiola-spa.site/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/console.php on line 17
+[02-Dec-2023 13:15:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/web.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/web.php on line 25
+[02-Dec-2023 22:19:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Artisan' not found in /home/fundkxhe/fabiola-spa.site/routes/console.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/console.php on line 17
+[02-Dec-2023 22:20:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/api.php on line 17
+[02-Dec-2023 22:21:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Broadcast' not found in /home/fundkxhe/fabiola-spa.site/routes/channels.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/channels.php on line 16
+[02-Dec-2023 22:53:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/fundkxhe/fabiola-spa.site/routes/web.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/routes/web.php on line 25

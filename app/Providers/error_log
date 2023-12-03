@@ -1566,3 +1566,59 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/RouteServiceProvider.php on line 11
+[03-Dec-2023 04:24:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/AppServiceProvider.php on line 7
+[03-Dec-2023 11:44:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/AuthServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/AuthServiceProvider.php on line 8
+[03-Dec-2023 11:55:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\EventServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/EventServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/EventServiceProvider.php on line 10
+[03-Dec-2023 12:10:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/FortifyServiceProvider.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/FortifyServiceProvider.php on line 16
+[03-Dec-2023 12:16:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/JetstreamServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/JetstreamServiceProvider.php on line 9
+[03-Dec-2023 12:27:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/RouteServiceProvider.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/RouteServiceProvider.php on line 11
+[03-Dec-2023 12:55:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/AppServiceProvider.php on line 7
+[03-Dec-2023 12:57:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/AuthServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/AuthServiceProvider.php on line 8
+[03-Dec-2023 12:58:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/BroadcastServiceProvider.php on line 8
+[03-Dec-2023 12:59:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\EventServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/EventServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/EventServiceProvider.php on line 10
+[03-Dec-2023 13:00:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/FortifyServiceProvider.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/FortifyServiceProvider.php on line 16
+[03-Dec-2023 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/RouteServiceProvider.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/RouteServiceProvider.php on line 11
+[03-Dec-2023 15:15:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/JetstreamServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/JetstreamServiceProvider.php on line 9
+[03-Dec-2023 20:53:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/fundkxhe/fabiola-spa.site/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Providers/BroadcastServiceProvider.php on line 8

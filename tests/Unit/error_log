@@ -1,0 +1,8 @@
+[27-Nov-2023 09:15:32 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Unit/ExampleTest.php on line 7
+[02-Dec-2023 09:09:13 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Unit/ExampleTest.php on line 7

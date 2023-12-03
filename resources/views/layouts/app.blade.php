@@ -154,26 +154,69 @@
 .hover\:overflow-y-auto:hover {
     overflow-y: auto;
 }
-
+tr:nth-child(even) {
+    background-color: #ececec;
+}
+tr:nth-child(od) {
+    background-color: #fff;
+}
+th {
+  font-weight: bold;
+}
+.select2-selection__choice__display {
+    color: black
+}
+.select2-selection--multiple {
+    height: 45px;
+}
+.select2-container--default .select2-selection--multiple {
+    border-radius: 13px;
+}
 </style>
 
 <div x-data="setup()" x-init="$refs.loading.classList.add('hidden');" :class="{ 'dark': isDark}">
       <!--  -->
       <div class="flex h-screen antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light">
         <!-- Loading screen -->
-        <div
-          x-ref="loading"
-          class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-opacity-90 bg-white-800"
-        >
-          Loading.....
-        </div>
+        <!--<div x-ref="loading" class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-opacity-90 bg-white-800">Loading.....</div>-->
 
         <!-- Sidebar -->
         <aside class="flex-shrink-0 hidden w-64 bg-white border-r dark:border-blue-800 dark:bg-darker md:block">
           <div class="flex flex-col h-full">
             <!-- Sidebar links -->
             <nav aria-label="Main" class="flex-1 px-2 py-4 space-y-2 overflow-y-hidden hover:overflow-y-auto">
-
+                
+                <!--<div class="w-full">-->
+                <!--    <center></center>-->
+                <!--    <center></center>-->
+                <!--    <a href="{{route('profile.show')}}" class="block p-2 border-2 border-white mt-4 text-sm text-center text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">Mi perfil</a>-->
+                <!--    -->
+                <!--</div>-->
+                <!---->
+                <div class="w-full flex justify-center items-center mb-6">
+                        <img class="w-[60px]" src="{{asset('img/logo.png')}}" />
+                        <span class="block p-2 font-bold text-lg text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">Fabiola SPA</span>
+                </div>
+                
+                <a href="{{route('dashboard')}}" class="block p-2 space-x-4 flex border-2 border-white mt-4 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
+                <span aria-hidden="true">
+                    <svg
+                      class="w-5 h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                      />
+                    </svg>
+                  </span>
+                    <span class="mr-[2px]">Dashboard</span>
+                </a>
               <!-- Components links -->
               <div x-data="{ isActive: false, open: false }">
                 <!-- active classes 'bg-blue-100 dark:bg-blue-600' -->
@@ -283,11 +326,18 @@
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a
-                    href="{{route('cliente.index')}}"
+                    href="{{route('venta.index')}}"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
                     Gestión de Ventas
+                  </a>
+                  <a
+                    href="{{route('cliente.index')}}"
+                    role="menuitem"
+                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
+                  >
+                    Gestión de Clientes
                   </a>
                   <a
                     href="{{route('proveedor.index')}}"
@@ -487,13 +537,7 @@
                 </span>
               </button>
 
-
-              <a
-                href="#"
-                class="inline-block text-2xl font-bold tracking-wider text-blue-700 uppercase dark:text-light"
-              >
-                SPA FABIOLA - BIENVENIDO
-              </a>
+                <span></span>
 
               <!-- Mobile sub menu button -->
               <button
@@ -642,14 +686,16 @@
                 -->
 
                 <!-- User avatar button -->
+                
                 <div class="relative" x-data="{ open: false }">
                   <button
                     @click="open = !open; $nextTick(() => { if(open){ $refs.userMenu.focus() } })"
                     type="button"
                     aria-haspopup="true"
                     :aria-expanded="open ? 'true' : 'false'"
-                    class="transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
+                    class="transition-opacity flex justify-center items-center duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
+                    <span class="mx-2">{{Auth::user()->name}}</span>
                     <span class="sr-only">User menu</span>
                     <img class="w-10 h-10 rounded-full" src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4" alt="Ahmed Kamel" />
                   </button>

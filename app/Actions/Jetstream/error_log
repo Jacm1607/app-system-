@@ -1,0 +1,8 @@
+[30-Nov-2023 19:07:41 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Jetstream\Contracts\DeletesUsers' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Jetstream/DeleteUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Jetstream/DeleteUser.php on line 7
+[01-Dec-2023 18:42:12 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Jetstream\Contracts\DeletesUsers' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Jetstream/DeleteUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Jetstream/DeleteUser.php on line 7

@@ -214,3 +214,11 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/database/seeders/DatabaseSeeder.php on line 7
+[23-Nov-2023 16:34:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home/fundkxhe/fabiola-spa.site/database/seeders/DatabaseSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/database/seeders/DatabaseSeeder.php on line 7
+[01-Dec-2023 11:50:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home/fundkxhe/fabiola-spa.site/database/seeders/DatabaseSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/database/seeders/DatabaseSeeder.php on line 7

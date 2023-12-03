@@ -1,0 +1,16 @@
+[30-Nov-2023 19:48:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\View\Component' not found in /home/fundkxhe/fabiola-spa.site/app/View/Components/AppLayout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/View/Components/AppLayout.php on line 7
+[30-Nov-2023 19:48:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\View\Component' not found in /home/fundkxhe/fabiola-spa.site/app/View/Components/GuestLayout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/View/Components/GuestLayout.php on line 7
+[01-Dec-2023 22:50:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\View\Component' not found in /home/fundkxhe/fabiola-spa.site/app/View/Components/GuestLayout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/View/Components/GuestLayout.php on line 7
+[02-Dec-2023 06:55:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\View\Component' not found in /home/fundkxhe/fabiola-spa.site/app/View/Components/AppLayout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/View/Components/AppLayout.php on line 7

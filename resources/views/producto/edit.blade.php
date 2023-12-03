@@ -1,17 +1,13 @@
 <x-app-layout>
     <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
-                <div class="flex justify-between">
-                    <div class="mb-6">
-                        <h1 class="text-2xl text-gray-700">Actualizar Producto</h1>
-                        <hr>
-                    </div>
-                    <div class="">
-                        <a class="py-2 px-4 bg-gray-700 text-white rounded-xl" href="{{ route('producto.index') }}">Atras</a>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+               <div class="">
+                    <div class="w-full bg-gray-200 text-black text-center p-2">
+                        <h1 class="text-2xl text-gray-700">Editar producto </h1>
                     </div>
                 </div>
-                <form method="POST" action="{{ route('producto.update', $producto->id) }}" class="forms-sample">
+                <form method="POST" action="{{ route('producto.update', $producto->id) }}" class="p-6">
                     @csrf
                     @method('put')
                    <div class="grid grid-cols-4">
@@ -25,7 +21,8 @@
                         </div>
                     </div>
                     <div class="flex justify-end">
-                        <button type="submit" class="py-2 px-4 bg-green-700 text-white rounded-xl">Actualizar</button>
+                        <a class="inline-flex items-center px-4 py-2 bg-gray-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4 p-2" href="{{ route('producto.index') }}">Cancelar</a>
+                        <button type="submit" class="inline-flex items-center px-4 py-2 bg-green-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 active:bg-green-900 focus:outline-none focus:border-green-900 focus:ring focus:ring-green-300 disabled:opacity-25 transition ml-4 p-2">Actualizar</button>
                     </div>
                 </form>
             </div>

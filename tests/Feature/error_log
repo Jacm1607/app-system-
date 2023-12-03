@@ -1,0 +1,44 @@
+[02-Dec-2023 22:50:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/ApiTokenPermissionsTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/ApiTokenPermissionsTest.php on line 13
+[03-Dec-2023 00:04:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/BrowserSessionsTest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/BrowserSessionsTest.php on line 11
+[03-Dec-2023 02:09:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/ApiTokenPermissionsTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/ApiTokenPermissionsTest.php on line 13
+[03-Dec-2023 02:14:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/BrowserSessionsTest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/BrowserSessionsTest.php on line 11
+[03-Dec-2023 03:58:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/DeleteAccountTest.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/DeleteAccountTest.php on line 12
+[03-Dec-2023 03:59:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/DeleteApiTokenTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/DeleteApiTokenTest.php on line 13
+[03-Dec-2023 03:59:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/EmailVerificationTest.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/EmailVerificationTest.php on line 14
+[03-Dec-2023 04:00:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/ExampleTest.php on line 8
+[03-Dec-2023 04:01:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/PasswordConfirmationTest.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/PasswordConfirmationTest.php on line 10
+[03-Dec-2023 04:01:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/PasswordResetTest.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/PasswordResetTest.php on line 12
+[03-Dec-2023 13:07:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/fundkxhe/fabiola-spa.site/tests/Feature/DeleteApiTokenTest.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/tests/Feature/DeleteApiTokenTest.php on line 13

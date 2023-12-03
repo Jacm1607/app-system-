@@ -1,0 +1,4 @@
+[25-Nov-2023 00:37:06 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Controllers/AreaController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Controllers/AreaController.php on line 8

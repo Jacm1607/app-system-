@@ -2,18 +2,13 @@
 <x-app-layout>
     <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
-                <div class="flex justify-between">
-                    <div class="mb-6">
-                        <h1 class="text-2xl text-gray-700">Actualizar Cliente</h1>
-                        <hr>
-                    </div>
-                    <div class="">
-                        <a class="py-2 px-4 bg-gray-700 text-white rounded-xl"
-                            href="{{ route('cliente.index') }}">Atras</a>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+               <div class="">
+                    <div class="w-full bg-gray-200 text-black text-center p-2">
+                        <h1 class="text-2xl text-gray-700">Editar cliente </h1>
                     </div>
                 </div>
-                <form method="POST" action="{{ route('cliente.update', $cliente->id) }}" class="forms-sample">
+                <form method="POST" action="{{ route('cliente.update', $cliente->id) }}" class="p-6">
                     @csrf
                     @method('put')
                     <div class="grid grid-cols-4 gap-8">
@@ -22,7 +17,7 @@
                                 <label class="text-gray-700" for="idPersona">Persona</label>
                             </p>
                             <p>
-                                <select class="w-full h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
                                     <option value="{{$cliente->idPersona}}">{{$cliente->persona->nombre}} {{$cliente->persona->apellido}}</option>
                                     @forelse ($personas as $persona)
                                         <option value="{{ $persona->id }}">{{ $persona->nombre }}
@@ -33,7 +28,7 @@
                                 </select>
                             </p>
                         </div>
-                        <div class=" col-span-1">
+                        <div class=" col-span-2">
                             <p>
                                 <label class="text-gray-700" for="razon_social">Razon Social</label>
                             </p>
@@ -52,8 +47,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex justify-end">
-                        <button type="submit" class="py-2 px-4 bg-green-700 text-white rounded-xl">Actualizar</button>
+                    <div class="flex justify-end mt-2">
+                        <a class="inline-flex items-center px-4 py-2 bg-gray-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4 p-2" href="{{ route('cliente.index') }}">Cancelar</a>
+                        <button type="submit" class="inline-flex items-center px-4 py-2 bg-green-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 active:bg-green-900 focus:outline-none focus:border-green-900 focus:ring focus:ring-green-300 disabled:opacity-25 transition ml-4 p-2">Actualizar</button>
                     </div>
                 </form>
             </div>

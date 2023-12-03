@@ -1790,3 +1790,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[03-Dec-2023 13:06:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8

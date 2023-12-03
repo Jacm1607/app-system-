@@ -222,3 +222,11 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Kernel.php on line 7
+[30-Nov-2023 21:33:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Kernel.php on line 7
+[02-Dec-2023 15:30:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Kernel.php on line 7

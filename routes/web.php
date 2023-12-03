@@ -10,6 +10,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ProveedorController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\RolController;
+use App\Http\Controllers\VentaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -96,4 +97,13 @@ Route::middleware([
     Route::get('/rol/edit/{id}', [RolController::class , 'edit'])->name('rol.edit');
     Route::put('/rol/update/{id}', [RolController::class , 'update'])->name('rol.update');
     Route::get('/rol/delete/{id}', [RolController::class , 'delete'])->name('rol.delete');
+    
+    Route::get('/venta/index', [VentaController::class , 'index'])->name('venta.index');
+    Route::get('/venta/create', [VentaController::class , 'create'])->name('venta.create');
+    Route::post('/venta/store', [VentaController::class , 'store'])->name('venta.store');
+    Route::get('/venta/show/{id}', [VentaController::class , 'show'])->name('venta.show');
+    Route::put('/venta/update/{id}', [VentaController::class , 'update'])->name('venta.update');
+    Route::get('/venta/delete/{id}', [VentaController::class , 'delete'])->name('venta.delete');
+    Route::get('/venta/add/{servicio}', [VentaController::class , 'add'])->name('venta.add');
+    
 });

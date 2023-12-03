@@ -23,12 +23,16 @@ class ServicioController extends Controller
     public function store(Request $request) {
         $request->validate([
             'nombre' => 'required|unique:servicios,nombre|max:255',
+            'precio' => 'required|numeric',
         ],[
             'nombre.unique' => 'Este nombre ya esta siendo usado.',
-            'nombre.required' => 'Campo requerido.'
+            'nombre.required' => 'Campo requerido.',
+            'precio.required' => 'Campo requerido.',
+            'precio.numeric' => 'Ingresa números.'
         ]);
         $servicio = new Servicio();
         $servicio->nombre = $request->nombre;
+        $servicio->precio = $request->precio;//Rinomodelacion
         $servicio->save();
         return redirect()->route('servicio.index');
     }
@@ -41,6 +45,7 @@ class ServicioController extends Controller
     public function update (Request $request, $id) {
         $servicio = Servicio::findOrFail($id);
         $servicio->nombre = $request->nombre;
+        $servicio->precio = $request->precio;
         $servicio->update();
         return redirect()->route('servicio.index');
     }

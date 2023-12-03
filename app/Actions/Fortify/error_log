@@ -1,0 +1,32 @@
+[03-Dec-2023 04:22:25 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\CreatesNewUsers' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/CreateNewUser.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/CreateNewUser.php on line 11
+[03-Dec-2023 04:22:35 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\ResetsUserPasswords' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/ResetUserPassword.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/ResetUserPassword.php on line 10
+[03-Dec-2023 04:22:39 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\UpdatesUserProfileInformation' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserProfileInformation.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserProfileInformation.php on line 10
+[03-Dec-2023 04:22:51 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\CreatesNewUsers' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/CreateNewUser.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/CreateNewUser.php on line 11
+[03-Dec-2023 04:22:53 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\ResetsUserPasswords' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/ResetUserPassword.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/ResetUserPassword.php on line 10
+[03-Dec-2023 04:22:56 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\UpdatesUserPasswords' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserPassword.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserPassword.php on line 10
+[03-Dec-2023 04:23:00 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\UpdatesUserProfileInformation' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserProfileInformation.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserProfileInformation.php on line 10
+[03-Dec-2023 05:09:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'Laravel\Fortify\Contracts\UpdatesUserPasswords' not found in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserPassword.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Actions/Fortify/UpdateUserPassword.php on line 10

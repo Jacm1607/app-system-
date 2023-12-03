@@ -1,0 +1,32 @@
+[02-Dec-2023 20:34:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/AgregarItem.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/AgregarItem.php on line 10
+[02-Dec-2023 20:38:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/CantidadItem.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/CantidadItem.php on line 7
+[02-Dec-2023 20:47:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/DeleteItem.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/DeleteItem.php on line 7
+[02-Dec-2023 21:03:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/TablaDetalleVenta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/TablaDetalleVenta.php on line 8
+[03-Dec-2023 04:21:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/AgregarItem.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/AgregarItem.php on line 10
+[03-Dec-2023 04:22:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/CantidadItem.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/CantidadItem.php on line 7
+[03-Dec-2023 04:22:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/DeleteItem.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/DeleteItem.php on line 7
+[03-Dec-2023 04:22:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Livewire\Component' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/TablaDetalleVenta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Livewire/TablaDetalleVenta.php on line 8

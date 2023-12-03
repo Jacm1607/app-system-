@@ -3,20 +3,22 @@
         .select2-selection__choice__display {
             color: black
         }
+        .select2-selection--multiple {
+            height: 45px;
+        }
+        .select2-container--default .select2-selection--multiple {
+            border-radius: 13px;
+        }
     </style>
     <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
-                <div class="flex justify-between">
-                    <div class="mb-6">
-                        <h1 class="text-2xl text-gray-700">Crear Rol</h1>
-                        <hr>
-                    </div>
-                    <div class="">
-                        <a class="py-2 px-4 bg-gray-700 text-white rounded-xl" href="{{ route('rol.index') }}">Atras</a>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+               <div class="">
+                    <div class="w-full bg-gray-200 text-black text-center p-2">
+                        <h1 class="text-2xl text-gray-700">Crear rol</h1>
                     </div>
                 </div>
-                <form method="POST" action="{{ route('rol.store') }}" class="forms-sample">
+                <form method="POST" action="{{ route('rol.store') }}" class="p-6">
                     @csrf
                    <div class="grid grid-cols-4 gap-4">
                     <div class=" col-span-1">
@@ -24,7 +26,7 @@
                             <label class="text-gray-700" for="idPrivilegio">Privilegio</label>
                         </p>
                         <p>
-                            <select class="w-full h-[45px] rounded-xl text-gray-700 select2"  name="idPrivilegio[]" id="idPrivilegio" multiple>
+                            <select class="w-full h-[55px] rounded-xl text-gray-700 select2"  name="idPrivilegio[]" id="idPrivilegio" multiple>
                                 @forelse ($privilegios as $privilegio)
                                     <option value="{{ $privilegio->id }}">{{ $privilegio->nombre }}</option>
                                 @empty
@@ -49,7 +51,8 @@
                         </div>
                     </div>
                     <div class="flex justify-end">
-                        <button type="submit" class="py-2 px-4 bg-green-700 text-white rounded-xl">Guardar</button>
+                        <a class="inline-flex items-center px-4 py-2 bg-gray-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4 p-2" href="{{ route('rol.index') }}">Cancelar</a>
+                        <button type="submit" class="inline-flex items-center px-4 py-2 bg-green-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 active:bg-green-900 focus:outline-none focus:border-green-900 focus:ring focus:ring-green-300 disabled:opacity-25 transition ml-4 p-2">Guardar</button>
                     </div>
                 </form>
             </div>

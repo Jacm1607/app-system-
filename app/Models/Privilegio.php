@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Privilegio extends Model
 {
     use HasFactory;
-    protected $fillable = ['nombre', 'estado'];
+    protected $fillable = ['nombre', 'slug', 'estado'];
 
     /**
      * The roles that belong to the Privilegio

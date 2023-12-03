@@ -222,3 +222,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8
+[01-Dec-2023 11:49:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Console\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8
