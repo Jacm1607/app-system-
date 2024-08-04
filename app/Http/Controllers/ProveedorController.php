@@ -9,6 +9,7 @@ use App\Models\Persona;
 class ProveedorController extends Controller
 {
     public function index (Request $request) {
+        privilegio('proveedor-index');
         if (isset($request->proveedor)) {
             $proveedores = Proveedor::where('razon_social', 'LIKE', "%$request->proveedor%")->where('estado', '1')->get();
         } else {
@@ -18,44 +19,46 @@ class ProveedorController extends Controller
     }
 
     public function create() {
-        $personas = Persona::where('estado', '1')->get();
-        return view('proveedor.create')->with('personas', $personas);
+        privilegio('proveedor-create');
+        return view('proveedor.create');
     }
 
     public function store(Request $request) {
+        privilegio('proveedor-store');
         $request->validate([
             'razon_social' => 'required|unique:proveedores,razon_social|max:255',
-            'empresa' => 'required|unique:proveedores,empresa|max:255',
+            'nit' => 'required|unique:proveedores,nit|max:999999999999999|numeric',
         ],[
             'razon_social.unique' => 'Esta razon social ya esta siendo usada.',
             'razon_social.required' => 'Campo requerido.',
-            'empresa.unique' => 'Esta empresa ya esta siendo usada.',
-            'empresa.required' => 'Campo requerido.'
+            'nit.unique' => 'Este NIT ya esta siendo usada.',
+            'nit.required' => 'Campo requerido',
+            'nit.max' => 'Maximo 15 caracteres.'
         ]);
         $proveedor = new Proveedor();
-        $proveedor->idPersona = $request->idPersona;
         $proveedor->razon_social = $request->razon_social;
-        $proveedor->empresa = $request->empresa;
+        $proveedor->nit = $request->nit;
         $proveedor->save();
         return redirect()->route('proveedor.index');
     }
 
     public function edit ($id) {
+        privilegio('proveedor-edit');
         $proveedor = Proveedor::findOrFail($id);
-        $personas = Persona::where('estado', '1')->where('id', '!=', $proveedor->idPersona)->get();
-        return view('proveedor.edit')->with('proveedor', $proveedor)->with('personas', $personas);
+        return view('proveedor.edit')->with('proveedor', $proveedor);
     }
 
     public function update (Request $request, $id) {
+        privilegio('proveedor-update');
         $proveedor = Proveedor::findOrFail($id);
-        $proveedor->idPersona = $request->idPersona;
         $proveedor->razon_social = $request->razon_social;
-        $proveedor->empresa = $request->empresa;
+        $proveedor->nit = $request->nit;
         $proveedor->update();
         return redirect()->route('proveedor.index');
     }
 
     public function delete ($id) {
+        privilegio('proveedor-delete');
         $proveedor = Proveedor::findOrFail($id);
         $proveedor->estado = '0';
         $proveedor->update();

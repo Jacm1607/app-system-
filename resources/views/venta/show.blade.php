@@ -17,7 +17,7 @@
                                         <label class="text-gray-700" for="Cliente">Cliente</label>
                                     </p>
                                     <p>
-                                        <input type="text" class="w-full rounded-xl text-gray-700" value="{{$venta->cliente->razon_social}}" disabled>
+                                        <input type="text" class="w-full rounded-xl text-gray-700" value="{{$venta->cliente->persona->nombre}} {{$venta->cliente->persona->apellido}}" disabled>
                                     </p>
                                 </div>                                    
                                 <div>
@@ -25,7 +25,7 @@
                                         <label class="text-gray-700" for="fecha">Fecha</label>
                                     </p>
                                     <p>
-                                        <input type="text" class="w-full rounded-xl text-gray-500 bg-gray-100 border-gray-200" value="{{ date('d/m/Y',strtotime($venta->created_at))}}" disabled>
+                                        <input type="text" class="w-full rounded-xl text-gray-500 bg-gray-100 border-gray-200" value="{{ $venta->created_at }}" disabled>
                                     </p>
                                 </div>
                             </div>
@@ -115,11 +115,11 @@
                                 var ventanaImpresion = window.open('', '_blank');
                                 ventanaImpresion.document.write('<html><head><title>Imprimir</title>');
                                 ventanaImpresion.document.write('<style>table {border-collapse: collapse;width: 100%;} th, td {border: 1px solid #ddd;padding: 8px;text-align: left;} th {background-color: #f2f2f2;}</style>');
-                                ventanaImpresion.document.write('</head><body>');
+                                ventanaImpresion.document.write('<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"><script>window.onload = function() { window.print() }<\/script></head><body><div class="w-full text-center font-bold text-lg">Recibo de Venta</div><div class="flex items-center justify-between p-4 bg-gray-100"><img src="{{asset("img/logo.png")}}" alt="Logo de la empresa" class="h-16"><div class="ml-4"><p class="text-lg font-bold">Fabiola Spa</p><p>Av. Cañoto, sobre el 2do anillo</p><p>+591 773 46 774</p></div></div>');
                                 ventanaImpresion.document.write(contenido);
                                 ventanaImpresion.document.write('</body></html>');
                                 ventanaImpresion.document.close();
-                                ventanaImpresion.print();
+                                // ventanaImpresion.print();
                             }
                         </script>
                     </div>

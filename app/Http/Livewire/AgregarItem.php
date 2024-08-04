@@ -5,7 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Illuminate\Support\Facades\Session;
 use App\Models\Servicio;
-use App\Models\Persona;
+use App\Models\Personal;
 
 class AgregarItem extends Component
 {
@@ -22,7 +22,7 @@ class AgregarItem extends Component
     public $servicio;
     
     protected $rules = [
-        'cantidad' => 'required|numeric|min:1',
+        'cantidad' => 'required|numeric|min:1|max:10',
         'idPersona' => 'required',
     ];
     
@@ -30,6 +30,7 @@ class AgregarItem extends Component
         'cantidad.required' => 'La cantidad es requerida.',
         'cantidad.numeric' => 'Ingrese un numero valido.',
         'cantidad.min' => 'Valor minimo 1.',
+        'cantidad.max' => 'Valor maximo 10.',
         'idPersona.required' => 'Campo requerido.',
     ];
     
@@ -54,9 +55,10 @@ class AgregarItem extends Component
     
     public function updatedIdServicio() {
         $objetoSeleccionado = Servicio::find($this->idServicio);
-        $personasObj = Persona::where('estado', '1')->where('idServicio', "$objetoSeleccionado->id")->get();
+        $personasObj = Personal::where('estado', '1')->where('idServicio', "$objetoSeleccionado->id")->get();
+        //dd($personasObj);
         $this->personas = $personasObj;
-        // dd($this->personas);
+        //dd($this->personas);
         $this->servicio = $objetoSeleccionado;
         $this->buttonDisabled = false;
     }
@@ -78,5 +80,6 @@ class AgregarItem extends Component
         $this->getServices();
         $this->personas = [];
         $this->buttonDisabled = true;
+        $this->cantidad = 1;
     }
 }

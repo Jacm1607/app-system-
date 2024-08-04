@@ -226,3 +226,23 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8
+[07-Mar-2024 10:05:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Console\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8
+[21-Mar-2024 00:51:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Console\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8
+[04-May-2024 00:01:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Console\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8
+[11-Jul-2024 10:35:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Console\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8
+[15-Jul-2024 01:51:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Console\Kernel' not found in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Console/Kernel.php on line 8

@@ -9,7 +9,7 @@
                 </div>
                 <form method="POST" action="{{ route('producto.store') }}" class="p-6">
                     @csrf
-                   <div class="grid grid-cols-4">
+                   <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
                                 <label class="text-gray-700" for="nombre_producto">Nombre</label>
@@ -18,6 +18,31 @@
                                 <input type="text" class="w-full rounded-xl text-gray-700" id="nombre_producto" name="nombre" placeholder="Ingresa nombre">
                             </p>
                              @error('nombre')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
+                        </div>
+              
+                    
+                        <div class=" col-span-1">
+                            <p>
+                                <label class="text-gray-700" for="precio_compra">Precio compra</label>
+                            </p>
+                            <p>
+                                <input type="number" step="0.01" class="w-full rounded-xl text-gray-700" id="precio_compra" name="precio_compra" placeholder="0.00">
+                            </p>
+                             @error('precio_compra')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
+                        </div>
+              
+                        <div class=" col-span-1">
+                            <p>
+                                <label class="text-gray-700" for="cantidad">Cantidad</label>
+                            </p>
+                            <p>
+                                <input type="number" class="w-full rounded-xl text-gray-700" id="cantidad" name="cantidad" placeholder="10">
+                            </p>
+                             @error('cantidad')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>

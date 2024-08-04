@@ -56,6 +56,14 @@
                                             </th>
                                             <th scope="col"
                                                 class="text-sm font-bold text-gray-900 px-6 py-4 text-left">
+                                                Precio compra
+                                            </th>
+                                            <th scope="col"
+                                                class="text-sm font-bold text-gray-900 px-6 py-4 text-left">
+                                                Cantidad
+                                            </th>
+                                            <th scope="col"
+                                                class="text-sm font-bold text-gray-900 px-6 py-4 text-left">
                                                 Opciones
                                             </th>
                                         </tr>
@@ -65,13 +73,17 @@
                                             <tr>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">{{ $producto->nombre }}
                                                 </td>
+                                                <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">{{ $producto->precio_compra }}
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">{{ $producto->cantidad }}
+                                                </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
                                                     <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('producto.edit', $producto->id) }}">✏ Editar</a>
-                                                    <a class="p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('producto.delete', $producto->id) }}">🗑 Eliminar</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('producto.delete', $producto->id) }}">🗑 Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty
-                                            <td colspan="2" class="px-6 py-4"><center>Sin registros</center></td>
+                                            <td colspan="4" class="px-6 py-4"><center>Sin registros</center></td>
                                         @endforelse
                                     </tbody>
                                 </table>

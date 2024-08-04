@@ -1794,3 +1794,415 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8
+[08-Dec-2023 07:05:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php on line 8
+[08-Dec-2023 07:05:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php on line 8
+[08-Dec-2023 07:05:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php on line 9
+[08-Dec-2023 07:05:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php on line 8
+[08-Dec-2023 07:05:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php on line 8
+[08-Dec-2023 07:06:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/fundkxhe/fabiola-spa.site/app/Models/User.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[08-Dec-2023 07:07:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8
+[08-Dec-2023 07:08:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php on line 8
+[08-Dec-2023 07:08:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php on line 8
+[08-Dec-2023 07:08:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php on line 8
+[08-Dec-2023 07:10:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php on line 8
+[30-Dec-2023 20:30:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php on line 8
+[30-Dec-2023 20:44:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php on line 8
+[30-Dec-2023 20:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php on line 8
+[30-Dec-2023 20:53:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php on line 8
+[02-Jan-2024 21:27:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php on line 8
+[03-Jan-2024 01:51:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php on line 8
+[06-Jan-2024 12:37:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php on line 8
+[06-Jan-2024 12:47:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php on line 8
+[06-Jan-2024 13:01:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php on line 8
+[06-Jan-2024 13:03:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php on line 8
+[06-Jan-2024 13:05:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php on line 8
+[06-Jan-2024 13:06:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php on line 9
+[06-Jan-2024 13:07:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/fundkxhe/fabiola-spa.site/app/Models/User.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[06-Jan-2024 13:08:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php on line 8
+[07-Jan-2024 01:26:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php on line 8
+[07-Jan-2024 01:28:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php on line 8
+[07-Jan-2024 04:29:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php on line 8
+[07-Mar-2024 10:06:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php on line 8
+[07-Mar-2024 10:06:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8
+[07-Mar-2024 10:06:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php on line 8
+[07-Mar-2024 10:06:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php on line 8
+[07-Mar-2024 10:06:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php on line 8
+[07-Mar-2024 10:06:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php on line 8
+[07-Mar-2024 10:06:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php on line 8
+[07-Mar-2024 10:06:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php on line 8
+[07-Mar-2024 10:06:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php on line 8
+[07-Mar-2024 10:06:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php on line 8
+[07-Mar-2024 10:06:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php on line 9
+[07-Mar-2024 10:06:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php on line 8
+[07-Mar-2024 10:06:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php on line 8
+[07-Mar-2024 10:06:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/fundkxhe/fabiola-spa.site/app/Models/User.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[07-Mar-2024 10:06:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php on line 8
+[21-Mar-2024 00:51:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php on line 8
+[21-Mar-2024 00:51:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8
+[21-Mar-2024 00:51:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php on line 8
+[21-Mar-2024 00:51:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php on line 8
+[21-Mar-2024 00:51:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php on line 8
+[21-Mar-2024 00:51:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php on line 8
+[21-Mar-2024 00:51:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php on line 8
+[21-Mar-2024 00:51:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php on line 8
+[21-Mar-2024 00:51:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php on line 8
+[21-Mar-2024 00:51:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php on line 8
+[21-Mar-2024 00:51:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php on line 9
+[21-Mar-2024 00:51:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php on line 8
+[21-Mar-2024 00:51:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php on line 8
+[21-Mar-2024 00:51:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/fundkxhe/fabiola-spa.site/app/Models/User.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[21-Mar-2024 00:51:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php on line 8
+[04-May-2024 00:05:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php on line 8
+[04-May-2024 00:05:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php on line 8
+[04-May-2024 00:06:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php on line 8
+[04-May-2024 00:06:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php on line 8
+[04-May-2024 00:06:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php on line 8
+[04-May-2024 00:06:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php on line 8
+[04-May-2024 00:06:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php on line 8
+[04-May-2024 00:06:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php on line 8
+[04-May-2024 00:06:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php on line 8
+[04-May-2024 00:06:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8
+[04-May-2024 00:06:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php on line 8
+[04-May-2024 00:06:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php on line 8
+[04-May-2024 00:06:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/fundkxhe/fabiola-spa.site/app/Models/User.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[04-May-2024 00:06:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php on line 8
+[04-May-2024 00:06:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php on line 9
+[11-Jul-2024 06:01:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php on line 8
+[11-Jul-2024 06:30:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php on line 8
+[11-Jul-2024 06:31:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8
+[11-Jul-2024 07:08:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php on line 8
+[11-Jul-2024 07:33:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php on line 8
+[11-Jul-2024 08:53:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php on line 9
+[11-Jul-2024 09:32:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php on line 8
+[11-Jul-2024 09:44:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php on line 8
+[11-Jul-2024 09:58:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/fundkxhe/fabiola-spa.site/app/Models/User.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[11-Jul-2024 10:17:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php on line 8
+[11-Jul-2024 18:37:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php on line 8
+[11-Jul-2024 19:16:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php on line 8
+[11-Jul-2024 19:30:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php on line 8
+[11-Jul-2024 21:47:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php on line 8
+[11-Jul-2024 23:14:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php on line 8
+[15-Jul-2024 01:52:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Area.php on line 8
+[15-Jul-2024 01:52:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Cliente.php on line 8
+[15-Jul-2024 01:52:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Compra.php on line 8
+[15-Jul-2024 01:52:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detallecompra.php on line 8
+[15-Jul-2024 01:52:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Detalleventa.php on line 8
+[15-Jul-2024 01:52:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Persona.php on line 8
+[15-Jul-2024 01:52:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Personal.php on line 8
+[15-Jul-2024 01:52:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Privilegio.php on line 8
+[15-Jul-2024 01:52:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Producto.php on line 8
+[15-Jul-2024 01:52:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Proveedor.php on line 8
+[15-Jul-2024 01:52:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Rol.php on line 9
+[15-Jul-2024 01:52:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Servicio.php on line 8
+[15-Jul-2024 01:52:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/TipoPersona.php on line 8
+[15-Jul-2024 01:52:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/fundkxhe/fabiola-spa.site/app/Models/User.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/User.php on line 13
+[15-Jul-2024 01:52:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Models/Venta.php on line 8

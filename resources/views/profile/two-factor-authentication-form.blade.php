@@ -1,10 +1,10 @@
 <x-jet-action-section>
     <x-slot name="title">
-        Autenticación de dos factores
+        <span class="dark:text-light text-gray-700">Autenticación de dos factores</span>
     </x-slot>
 
     <x-slot name="description">
-        Agregue seguridad adicional a su cuenta utilizando la autenticación de dos factores.
+        <span class="dark:text-light text-gray-700">Agregue seguridad adicional a su cuenta utilizando la autenticación de dos factores.</span>
     </x-slot>
 
     <x-slot name="content">
@@ -52,7 +52,7 @@
                     <div class="mt-4">
                         <x-jet-label for="code" value="{{ __('Code') }}" />
 
-                        <x-jet-input id="code" type="text" name="code" class="block mt-1 w-1/2" inputmode="numeric" autofocus autocomplete="one-time-code"
+                        <x-jet-input id="code" type="text" name="code" class="block mt-1 w-1/2 text-black" inputmode="numeric" autofocus autocomplete="one-time-code"
                             wire:model.defer="code"
                             wire:keydown.enter="confirmTwoFactorAuthentication" />
 

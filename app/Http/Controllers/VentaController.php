@@ -17,10 +17,12 @@ class VentaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
-    {   if (isset($request->venta)) {
-            $ventas = Venta::where('id', "$request->venta")->where('estado', '1')->get();
+    {   
+        privilegio('venta-index');
+        if (isset($request->venta)) {
+            $ventas = Venta::where('id', "$request->venta")->where('estado', '1')->orderBy('id', 'DESC')->paginate(10);
         } else {
-            $ventas = Venta::where('estado', '1')->get();
+            $ventas = Venta::where('estado', '1')->orderBy('id', 'DESC')->paginate(10);
         }
         return view('venta.index')->with('ventas', $ventas);
     }
@@ -31,6 +33,7 @@ class VentaController extends Controller
      */
     public function create()
     {
+        privilegio('venta-create');
         $servicios = Session::put('servicios', []);
         $servicios = Servicio::where('estado', '1')->get();
         $clientes = Cliente::where('estado', '1')->get();
@@ -45,6 +48,7 @@ class VentaController extends Controller
      */
     public function store(Request $request)
     {
+        privilegio('venta-store');
         $request->validate([
             'idCliente' => 'required',
         ],[
@@ -52,6 +56,7 @@ class VentaController extends Controller
         ]);
         $venta = new Venta();
         $venta->idCliente = $request->idCliente;
+        $venta->created_at = $request->fecha;
         $venta->save();
         $servicios = Session::get('servicios');
         
@@ -76,6 +81,7 @@ class VentaController extends Controller
      */
     public function show($id)
     {
+        privilegio('venta-show');
         $venta = Venta::findOrFail($id);
         $detalles = Detalleventa::where('idVenta', $venta->id)->get();
         return view('venta.show')->with('venta', $venta)->with('detalles', $detalles);
@@ -112,6 +118,7 @@ class VentaController extends Controller
      */
     public function delete($id)
     {
+        privilegio('venta-delete');
         $venta = Venta::findOrFail($id);
         $venta->estado = '0';
         $venta->update();

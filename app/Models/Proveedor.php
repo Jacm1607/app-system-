@@ -9,10 +9,5 @@ class Proveedor extends Model
 {
     use HasFactory;
     protected $table = 'proveedores';
-    protected $fillable = ['idPersona', 'razon_social', 'empresa', 'estado'];
-
-    public function persona()
-    {
-        return $this->hasOne(Persona::class, 'id', 'idPersona');
-    }
+    protected $fillable = ['razon_social', 'nit', 'estado'];
 }

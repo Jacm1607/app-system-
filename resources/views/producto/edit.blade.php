@@ -10,7 +10,7 @@
                 <form method="POST" action="{{ route('producto.update', $producto->id) }}" class="p-6">
                     @csrf
                     @method('put')
-                   <div class="grid grid-cols-4">
+                   <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
                                 <label class="text-gray-700" for="nombre_producto">Nombre</label>
@@ -18,6 +18,28 @@
                             <p>
                                 <input type="text" class="w-full rounded-xl text-gray-700" id="nombre_producto" name="nombre" value="{{$producto->nombre}}" placeholder="Ingresa nombre">
                             </p>
+                        </div>
+                        <div class=" col-span-1">
+                            <p>
+                                <label class="text-gray-700" for="precio_compra">Precio compra</label>
+                            </p>
+                            <p>
+                                <input type="number" step="0.10" class="w-full rounded-xl text-gray-700" id="precio_compra" name="precio_compra" value="{{$producto->precio_compra}}" placeholder="0.00">
+                            </p>
+                             @error('precio_compra')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class=" col-span-1">
+                            <p>
+                                <label class="text-gray-700" for="cantidad">Cantidad</label>
+                            </p>
+                            <p>
+                                <input type="number" class="w-full rounded-xl text-gray-700" id="cantidad" name="cantidad" value="{{$producto->cantidad}}" placeholder="10">
+                            </p>
+                             @error('cantidad')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="flex justify-end">

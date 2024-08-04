@@ -9,55 +9,72 @@ use App\Models\Persona;
 class ClienteController extends Controller
 {
     public function index (Request $request) {
+        privilegio('cliente-index');
         if (isset($request->cliente)) {
-            $clientes = Cliente::where('razon_social', 'LIKE', "%$request->cliente%")->where('estado', '1')->get();
+            $search = true;
+            $clientes = Persona::where('nombre', 'LIKE', "%$request->cliente%")->orWhere('apellido', 'LIKE', "%$request->cliente%")->get();
         } else {
+            $search = false;
             $clientes = Cliente::where('estado', '1')->get();
         }
-        return view('cliente.index')->with('clientes', $clientes);
+        return view('cliente.index')->with('clientes', $clientes)->with('search', $search);
     }
 
     public function create() {
+        privilegio('cliente-create');
         $personas = Persona::where('estado', '1')->get();
         return view('cliente.create')->with('personas', $personas);
     }
 
     public function store(Request $request) {
+        privilegio('cliente-store');
         $request->validate([
-            'idPersona' => 'required',
-            'razon_social' => 'required|unique:clientes,razon_social|max:255',
-            'nit' => 'required|unique:clientes,razon_social|max:255',
+            'idPersona' => 'required|unique:clientes,idPersona',
+            'recurrente' => 'required|boolean',
+            'fuente_referencia' => 'regex:/^[a-zA-Z]+$/u|max:255',
         ],[
             'idPersona.required' => 'Campo requerido.',
-            'razon_social.unique' => 'Esta razon social ya esta siendo usada.',
-            'razon_social.required' => 'Campo requerido.',
-            'nit.unique' => 'Este NIT ya esta siendo usada.',
-            'nit.required' => 'Campo requerido.'
+            'idPersona.unique' => 'Cliente registrado.',
+            'recurrente.required' => 'Campo requerido.',
+            'fuente_referencia.regex' => 'Solo se admite letras.'
         ]);
         $cliente = new Cliente();
         $cliente->idPersona = $request->idPersona;
-        $cliente->razon_social = $request->razon_social;
-        $cliente->nit = $request->nit;
+        $cliente->recurrente = $request->recurrente;
+        $cliente->fuente_referencia = $request->fuente_referencia ?? 'Ninguna';
         $cliente->save();
         return redirect()->route('cliente.index');
     }
 
     public function edit ($id) {
+        privilegio('cliente-edit');
         $cliente = Cliente::findOrFail($id);
         $personas = Persona::where('estado', '1')->where('id', '!=', $cliente->idPersona)->get();
         return view('cliente.edit')->with('cliente', $cliente)->with('personas', $personas);
     }
 
     public function update (Request $request, $id) {
+        privilegio('cliente-update');
+        $request->validate([
+            'idPersona' => 'required',
+            'recurrente' => 'required|boolean',
+            'fuente_referencia' => 'regex:/^[a-zA-Z]+$/u|max:255',
+        ],[
+            'idPersona.required' => 'Campo requerido.',
+            //'idPersona.unique' => 'Cliente registrado.',
+            'recurrente.required' => 'Campo requerido.',
+            'fuente_referencia.regex' => 'Solo se admite letras.'
+        ]);
         $cliente = Cliente::findOrFail($id);
         $cliente->idPersona = $request->idPersona;
-        $cliente->razon_social = $request->razon_social;
-        $cliente->nit = $request->nit;
+        $cliente->recurrente = $request->recurrente;
+        $cliente->fuente_referencia = $request->fuente_referencia ?? 'Ninguna';
         $cliente->update();
         return redirect()->route('cliente.index');
     }
 
     public function delete ($id) {
+        privilegio('cliente-delete');
         $cliente = Cliente::findOrFail($id);
         $cliente->estado = '0';
         $cliente->update();

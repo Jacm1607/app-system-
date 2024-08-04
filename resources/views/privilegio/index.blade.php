@@ -67,7 +67,7 @@
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-center font-normal text-gray-900 space-x-4">
                                                     <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('privilegio.edit', $privilegio->id) }}">✏ Editar</a>
-                                                    <a class="p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('privilegio.delete', $privilegio->id) }}">🗑 Eliminar</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('privilegio.delete', $privilegio->id) }}">🗑 Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty
@@ -75,6 +75,9 @@
                                         @endforelse
                                     </tbody>
                                 </table>
+                                <div class="my-4">
+                                    {{$privilegios->links()}}
+                                </div>
                             </div>
                         </div>
                     </div>

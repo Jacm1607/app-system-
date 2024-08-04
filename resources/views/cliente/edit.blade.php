@@ -1,7 +1,7 @@
 
 <x-app-layout>
     <div class="py-4">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="w-full mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                <div class="">
                     <div class="w-full bg-gray-200 text-black text-center p-2">
@@ -28,23 +28,32 @@
                                 </select>
                             </p>
                         </div>
-                        <div class=" col-span-2">
-                            <p>
-                                <label class="text-gray-700" for="razon_social">Razon Social</label>
-                            </p>
-                            <p>
-                                <input type="text" class="w-full rounded-xl text-gray-700" id="razon_social" name="razon_social" value="{{$cliente->razon_social}}"
-                                    placeholder="Ingresa razon social">
-                            </p>
-                        </div>
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="nit">NIT</label>
+                                <label class="text-gray-700" for="recurrente">Cliente recurrente</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl text-gray-700" id="nit" name="nit" value="{{$cliente->nit}}"
-                                    placeholder="Ingresa NIT">
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="recurrente" id="recurrente">
+                                        
+                                        <option value="0" {{$cliente->recurrente == "0" ? 'selected' : ''}}>NO</option> 
+                                        <option value="1" {{$cliente->recurrente == "1" ? 'selected': ''}}>SI</option>
+                                </select>
                             </p>
+                            @error('recurrente')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class=" col-span-2">
+                            <p>
+                                <label class="text-gray-700" for="nit">Fuente referencia</label>
+                            </p>
+                            <p>
+                                <input type="text" class="w-full rounded-xl text-gray-700" id="fuente_referencia" name="fuente_referencia" value="{{$cliente->fuente_referencia}}"
+                                    placeholder="Ingresa referencia">
+                            </p>
+                            @error('fuente_referencia')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="flex justify-end mt-2">

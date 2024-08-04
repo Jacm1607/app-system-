@@ -354,3 +354,67 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[07-Mar-2024 10:06:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[21-Mar-2024 00:51:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[05-Apr-2024 02:27:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[03-May-2024 19:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[05-May-2024 11:56:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[05-May-2024 11:56:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[05-May-2024 11:56:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[05-May-2024 11:56:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[05-May-2024 11:56:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[05-May-2024 11:56:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[28-May-2024 05:10:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[03-Jun-2024 02:45:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[04-Jun-2024 02:52:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[06-Jun-2024 02:51:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[08-Jul-2024 12:31:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14
+[15-Jul-2024 01:52:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/bootstrap/app.php on line 14

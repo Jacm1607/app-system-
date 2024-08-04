@@ -11,6 +11,9 @@ use App\Http\Controllers\ProveedorController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\VentaController;
+use App\Http\Controllers\CompraController;
+use App\Http\Controllers\PersonalController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,9 +34,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::get('/producto/index', [ProductoController::class , 'index'])->name('producto.index');
     Route::get('/producto/create', [ProductoController::class , 'create'])->name('producto.create');
@@ -69,9 +70,11 @@ Route::middleware([
     Route::get('/persona/edit/{id}', [PersonaController::class , 'edit'])->name('persona.edit');
     Route::put('/persona/update/{id}', [PersonaController::class , 'update'])->name('persona.update');
     Route::get('/persona/delete/{id}', [PersonaController::class , 'delete'])->name('persona.delete');
+    Route::get('/persona/exportar-pdf', [PersonaController::class , 'pdf'])->name('persona.pdf');
+    
 
     Route::get('/cliente/index', [ClienteController::class , 'index'])->name('cliente.index');
-    Route::get('/cliente/create', [ClienteController::class , 'create'])->name('cliente.create');
+    Route::get('/cliente/create/{persona}', [ClienteController::class , 'create'])->name('cliente.create');
     Route::post('/cliente/store', [ClienteController::class , 'store'])->name('cliente.store');
     Route::get('/cliente/edit/{id}', [ClienteController::class , 'edit'])->name('cliente.edit');
     Route::put('/cliente/update/{id}', [ClienteController::class , 'update'])->name('cliente.update');
@@ -90,6 +93,7 @@ Route::middleware([
     Route::get('/usuario/edit/{id}', [UsuarioController::class , 'edit'])->name('usuario.edit');
     Route::put('/usuario/update/{id}', [UsuarioController::class , 'update'])->name('usuario.update');
     Route::get('/usuario/delete/{id}', [UsuarioController::class , 'delete'])->name('usuario.delete');
+    Route::get('/usuario/reset/{id}', [UsuarioController::class , 'reset_password'])->name('usuario.reset_password');
 
     Route::get('/rol/index', [RolController::class , 'index'])->name('rol.index');
     Route::get('/rol/create', [RolController::class , 'create'])->name('rol.create');
@@ -105,5 +109,20 @@ Route::middleware([
     Route::put('/venta/update/{id}', [VentaController::class , 'update'])->name('venta.update');
     Route::get('/venta/delete/{id}', [VentaController::class , 'delete'])->name('venta.delete');
     Route::get('/venta/add/{servicio}', [VentaController::class , 'add'])->name('venta.add');
+    
+    Route::get('/compra/index', [CompraController::class , 'index'])->name('compra.index');
+    Route::get('/compra/create', [CompraController::class , 'create'])->name('compra.create');
+    Route::post('/compra/store', [CompraController::class , 'store'])->name('compra.store');
+    Route::get('/compra/show/{id}', [CompraController::class , 'show'])->name('compra.show');
+    Route::put('/compra/update/{id}', [CompraController::class , 'update'])->name('compra.update');
+    Route::get('/compra/delete/{id}', [CompraController::class , 'delete'])->name('compra.delete');
+    Route::get('/compra/add/{servicio}', [CompraController::class , 'add'])->name('compra.add');
+    
+    Route::get('/personal/index', [PersonalController::class , 'index'])->name('personal.index');
+    Route::get('/personal/create/{persona}', [PersonalController::class , 'create'])->name('personal.create');
+    Route::post('/personal/store', [PersonalController::class , 'store'])->name('personal.store');
+    Route::get('/personal/edit/{id}', [PersonalController::class , 'edit'])->name('personal.edit');
+    Route::put('/personal/update/{id}', [PersonalController::class , 'update'])->name('personal.update');
+    Route::get('/personal/delete/{id}', [PersonalController::class , 'delete'])->name('personal.delete');
     
 });

@@ -226,3 +226,23 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[07-Mar-2024 10:05:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[21-Mar-2024 00:51:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[04-May-2024 00:01:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[11-Jul-2024 14:27:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8
+[15-Jul-2024 01:51:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Exceptions/Handler.php on line 8

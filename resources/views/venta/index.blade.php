@@ -48,18 +48,18 @@
                                             <tr>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                    {{$key + 1}}
+                                                    {{$venta->id}}
                                                 </td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                    {{$venta->cliente->razon_social}}</td>
+                                                    {{$venta->cliente->persona->nombre}} {{$venta->cliente->persona->apellido}}</td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                    {{DateTime::createFromFormat('Y-m-d H:i:s', $venta->created_at)->format('d-m-Y')}}</td>
+                                                    {{$venta->created_at}}</td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
                                                     <a class="p-2 bg-blue-500 text-white rounded-xl" href="{{route('venta.show', $venta->id)}}">🔍 Ver</a>
-                                                    <a class="p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('venta.delete', $venta->id) }}">🗑 Eliminar</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('venta.delete', $venta->id) }}">🗑 Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty
@@ -69,6 +69,9 @@
                                         @endforelse
                                     </tbody>
                                 </table>
+                                <div class="mt-4">
+                                    {{$ventas->links()}}
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -8,6 +8,7 @@ use App\Models\Area;
 class AreaController extends Controller
 {
     public function index (Request $request) {
+        privilegio('area-index');
         if (isset($request->area)) {
             $areas = Area::where('nombre', 'LIKE', "%$request->area%")->where('estado', '1')->get();
         } else {
@@ -17,10 +18,12 @@ class AreaController extends Controller
     }
 
     public function create() {
+        privilegio('area-create');
         return view('area.create');
     }
 
     public function store(Request $request) {
+        privilegio('area-store');
         $request->validate([
             'nombre' => 'required|unique:areas,nombre|max:255',
         ],[
@@ -34,11 +37,13 @@ class AreaController extends Controller
     }
 
     public function edit ($id) {
+        privilegio('area-edit');
         $area = Area::findOrFail($id);
         return view('area.edit')->with('area', $area);
     }
 
     public function update (Request $request, $id) {
+        privilegio('area-update');
         $area = Area::findOrFail($id);
         $area->nombre = $request->nombre;
         $area->update();
@@ -46,6 +51,7 @@ class AreaController extends Controller
     }
 
     public function delete ($id) {
+        privilegio('area-delete');
         $area = Area::findOrFail($id);
         $area->estado = '0';
         $area->update();

@@ -11,27 +11,6 @@
                     @csrf
                     @method('put')
                    <div class="grid grid-cols-4 gap-4">
-                    <div class=" col-span-1">
-                        <p>
-                            <label class="text-gray-700" for="idPrivilegio">Privilegio</label>
-                        </p>
-                        <p>
-                            <select class="w-full h-[45px] rounded-xl text-gray-700 select2"  name="idPrivilegio[]" id="idPrivilegio" multiple>
-                                @forelse ($privilegios as $privilegio)
-                                    <option
-                                    @foreach ($rol->privilegios as $priv)
-                                        {{ $priv->id == $privilegio->id ? 'selected': ''}}
-                                    @endforeach
-                                    value="{{ $privilegio->id }}">{{ $privilegio->nombre }}</option>
-                                @empty
-                                    <option value="">SIN REGISTROS</option>
-                                @endforelse
-                            </select>
-                        </p>
-                        @error('idPrivilegio')
-                            <div class="text-red-500">{{ $message }}</div>
-                        @enderror
-                    </div>
                         <div class=" col-span-1">
                             <p>
                                 <label class="text-gray-700" for="nombre_rol">Nombre</label>
@@ -40,8 +19,29 @@
                           <input type="text" class="w-full rounded-xl text-gray-700" id="nombre_rol" name="nombre" value="{{$rol->nombre}}" placeholder="Ingresa nombre">
                             </p>
                         </div>
+                        <div class=" col-span-3">
+                            <p>
+                                <label class="text-gray-700" for="idPrivilegio">Privilegio</label>
+                            </p>
+                            <p>
+                                <select class="w-full h-[45px] rounded-xl text-gray-700 select2"  name="idPrivilegio[]" id="idPrivilegio" multiple>
+                                    @forelse ($privilegios as $privilegio)
+                                        <option
+                                        @foreach ($rol->privilegios as $priv)
+                                            {{ $priv->id == $privilegio->id ? 'selected': ''}}
+                                        @endforeach
+                                        value="{{ $privilegio->id }}">{{ $privilegio->nombre }}</option>
+                                    @empty
+                                        <option value="">SIN REGISTROS</option>
+                                    @endforelse
+                                </select>
+                            </p>
+                            @error('idPrivilegio')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
+                        </div>
                     </div>
-                    <div class="flex justify-end">
+                    <div class="flex justify-end mt-4">
                         <a class="inline-flex items-center px-4 py-2 bg-gray-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4 p-2" href="{{ route('rol.index') }}">Cancelar</a>
                         <button type="submit" class="inline-flex items-center px-4 py-2 bg-green-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 active:bg-green-900 focus:outline-none focus:border-green-900 focus:ring focus:ring-green-300 disabled:opacity-25 transition ml-4 p-2">Actualizar</button>
                     </div>

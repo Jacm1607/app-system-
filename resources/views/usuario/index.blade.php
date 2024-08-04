@@ -58,6 +58,9 @@
                                                 class="text-sm font-bold text-gray-900 px-6 py-4 text-left">Email
                                             </th>
                                             <th scope="col"
+                                                class="text-sm font-bold text-gray-900 px-6 py-4 text-left">Rol Asignado
+                                            </th>
+                                            <th scope="col"
                                                 class="text-sm font-bold text-gray-900 px-6 py-4 text-left">Estado
                                             </th>
                                             <th scope="col"
@@ -77,11 +80,15 @@
                                                     {{ $usuario->email }}</td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
+                                                    {{ $usuario->rol->nombre }}</td>
+                                                <td
+                                                    class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
                                                     {{ $usuario->estado ? 'ACTIVO': 'INACTIVO' }}</td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
+                                                    <a class="btn-restaurar p-2 bg-cyan-500 text-black rounded-xl" href="{{ route('usuario.reset_password', $usuario->id) }}">⚙  Resetear password</a>
                                                     <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('usuario.edit', $usuario->id) }}">✏ Editar</a>
-                                                    <a class="p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('usuario.delete', $usuario->id) }}">🗑 Eliminar</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('usuario.delete', $usuario->id) }}">🗑 Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty
@@ -91,6 +98,33 @@
                                         @endforelse
                                     </tbody>
                                 </table>
+                                <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const buttons2 = document.querySelectorAll('.btn-restaurar');
+
+                                    buttons2.forEach(function(button) {
+                                      // Agrega un evento de clic a cada botón
+                                      button.addEventListener('click', function(e) {
+                                        e.preventDefault(); // Previene el comportamiento predeterminado del enlace
+                                
+                                        // Muestra el cuadro de diálogo SweetAlert2
+                                        Swal.fire({
+                                          title: '¿Estás seguro de realizar la acción?',
+                                          text: 'Estás a punto de resaturar la contraseña.',
+                                          icon: 'warning',
+                                          showCancelButton: true,
+                                          confirmButtonText: 'Sí, resturar',
+                                          cancelButtonText: 'Cancelar'
+                                        }).then((result) => {
+                                          // Si se hace clic en "Sí, redirigirme", redirige al enlace del botón
+                                          if (result.isConfirmed) {
+                                            window.location.href = button.getAttribute('href');
+                                          }
+                                        });
+                                      });
+                                    });
+                                  })
+                                </script>
                             </div>
                         </div>
                     </div>

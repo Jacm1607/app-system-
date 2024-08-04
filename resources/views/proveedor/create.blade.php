@@ -12,21 +12,6 @@
                     <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idPersona">Persona</label>
-                            </p>
-                            <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
-                                    @forelse ($personas as $persona)
-                                        <option value="{{ $persona->id }}">{{ $persona->nombre }}
-                                            {{ $persona->apellido }}</option>
-                                    @empty
-                                        <option value="">SIN REGISTROS</option>
-                                    @endforelse
-                                </select>
-                            </p>
-                        </div>
-                        <div class=" col-span-1">
-                            <p>
                                 <label class="text-gray-700" for="razon_social">Razon Social</label>
                             </p>
                             <p>
@@ -39,13 +24,13 @@
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="empresa">Empresa</label>
+                                <label class="text-gray-700" for="nit">NIT</label>
                             </p>
                             <p>
-                                <input type="text" class="w-full rounded-xl text-gray-700" id="empresa" name="empresa"
-                                    placeholder="Ingresa empresa">
+                                <input type="number" class="w-full rounded-xl text-gray-700" id="nit" name="nit"
+                                    placeholder="7777777777">
                             </p>
-                             @error('empresa')
+                             @error('nit')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>

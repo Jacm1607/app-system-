@@ -20,7 +20,7 @@
                                         <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idCliente" id="idCliente">
                                             <option value="" hidden>Seleccione una opcion</option>
                                             @forelse ($clientes as $cliente)
-                                                <option value="{{ $cliente->id }}">{{ $cliente->razon_social }}</option>
+                                                <option value="{{ $cliente->id }}">{{ $cliente->persona->nombre }} {{ $cliente->persona->apellido }}</option>
                                             @empty
                                                 <option value="">SIN REGISTROS</option>
                                             @endforelse
@@ -35,7 +35,10 @@
                                         <label class="text-gray-700" for="fecha">Fecha</label>
                                     </p>
                                     <p>
-                                        <input type="text" class="w-full rounded-xl text-gray-500 bg-gray-100 border-gray-200" id="fecha" name="fecha" value="{{now()->format('Y-m-d')}}" readonly>
+                                        @php
+                                        date_default_timezone_set("America/La_Paz");
+                                        @endphp
+                                        <input type="text" class="w-full rounded-xl text-gray-500 bg-gray-100 border-gray-200" id="fecha" name="fecha" value="{{now()->format('Y-m-d h:i:s')}}" readonly>
                                     </p>
                                     @error('fecha')
                                         <div class="text-red-500">{{ $message }}</div>

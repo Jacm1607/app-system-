@@ -2,3 +2,167 @@
 Stack trace:
 #0 {main}
   thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[08-Dec-2023 00:56:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php on line 7
+[08-Dec-2023 00:56:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[08-Dec-2023 00:56:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php on line 7
+[08-Dec-2023 00:57:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php on line 7
+[08-Dec-2023 00:57:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustProxies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php on line 8
+[08-Dec-2023 00:57:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[08-Dec-2023 00:57:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php on line 7
+[08-Dec-2023 00:58:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php on line 7
+[08-Dec-2023 01:00:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[08-Dec-2023 01:03:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php on line 7
+[08-Dec-2023 01:05:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php on line 7
+[08-Dec-2023 06:56:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php on line 7
+[08-Dec-2023 07:04:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustProxies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php on line 8
+[07-Mar-2024 10:06:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php on line 7
+[07-Mar-2024 10:06:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php on line 7
+[07-Mar-2024 10:06:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[07-Mar-2024 10:06:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php on line 7
+[07-Mar-2024 10:06:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php on line 7
+[07-Mar-2024 10:06:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustProxies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php on line 8
+[07-Mar-2024 10:06:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[21-Mar-2024 00:51:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php on line 7
+[21-Mar-2024 00:51:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php on line 7
+[21-Mar-2024 00:51:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[21-Mar-2024 00:51:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php on line 7
+[21-Mar-2024 00:51:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php on line 7
+[21-Mar-2024 00:51:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustProxies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php on line 8
+[21-Mar-2024 00:51:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[14-Jul-2024 04:17:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[14-Jul-2024 06:35:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[14-Jul-2024 08:01:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php on line 7
+[14-Jul-2024 08:27:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php on line 7
+[14-Jul-2024 08:36:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustProxies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php on line 8
+[14-Jul-2024 09:40:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php on line 7
+[14-Jul-2024 13:17:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php on line 7
+[15-Jul-2024 01:51:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/Authenticate.php on line 7
+[15-Jul-2024 01:52:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/EncryptCookies.php on line 7
+[15-Jul-2024 01:52:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[15-Jul-2024 01:52:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrimStrings.php on line 7
+[15-Jul-2024 01:52:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustHosts.php on line 7
+[15-Jul-2024 01:52:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustProxies' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/TrustProxies.php on line 8
+[15-Jul-2024 01:52:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/fundkxhe/fabiola-spa.site/app/Http/Middleware/VerifyCsrfToken.php on line 7

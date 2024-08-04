@@ -1,15 +1,4 @@
 <x-app-layout>
-    <style>
-        .select2-selection__choice__display {
-            color: black
-        }
-        .select2-selection--multiple {
-            height: 45px;
-        }
-        .select2-container--default .select2-selection--multiple {
-            border-radius: 13px;
-        }
-    </style>
     <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
@@ -21,23 +10,6 @@
                 <form method="POST" action="{{ route('rol.store') }}" class="p-6">
                     @csrf
                    <div class="grid grid-cols-4 gap-4">
-                    <div class=" col-span-1">
-                        <p>
-                            <label class="text-gray-700" for="idPrivilegio">Privilegio</label>
-                        </p>
-                        <p>
-                            <select class="w-full h-[55px] rounded-xl text-gray-700 select2"  name="idPrivilegio[]" id="idPrivilegio" multiple>
-                                @forelse ($privilegios as $privilegio)
-                                    <option value="{{ $privilegio->id }}">{{ $privilegio->nombre }}</option>
-                                @empty
-                                    <option value="">SIN REGISTROS</option>
-                                @endforelse
-                            </select>
-                        </p>
-                        @error('idPrivilegio')
-                            <div class="text-red-500">{{ $message }}</div>
-                        @enderror
-                    </div>
                         <div class=" col-span-1">
                             <p>
                                 <label class="text-gray-700" for="nombre_rol">Nombre</label>
@@ -49,8 +21,25 @@
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>
+                        <div class="col-span-3">
+                            <p>
+                                <label class="text-gray-700" for="idPrivilegio">Privilegio</label>
+                            </p>
+                            <p>
+                                <select class="w-full h-[55px] rounded-xl text-gray-700 select2"  name="idPrivilegio[]" id="idPrivilegio" multiple>
+                                    @forelse ($privilegios as $privilegio)
+                                        <option value="{{ $privilegio->id }}">{{ $privilegio->nombre }}</option>
+                                    @empty
+                                        <option value="">SIN REGISTROS</option>
+                                    @endforelse
+                                </select>
+                            </p>
+                            @error('idPrivilegio')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
+                        </div>
                     </div>
-                    <div class="flex justify-end">
+                    <div class="flex justify-end mt-4">
                         <a class="inline-flex items-center px-4 py-2 bg-gray-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4 p-2" href="{{ route('rol.index') }}">Cancelar</a>
                         <button type="submit" class="inline-flex items-center px-4 py-2 bg-green-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 active:bg-green-900 focus:outline-none focus:border-green-900 focus:ring focus:ring-green-300 disabled:opacity-25 transition ml-4 p-2">Guardar</button>
                     </div>

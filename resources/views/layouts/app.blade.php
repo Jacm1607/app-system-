@@ -15,77 +15,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js" integrity="sha256-EVZCmhajjLhgTcxlGMGUBtQiYULZCPjt0uNTFEPFTRk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     @livewireStyles
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Scripts -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="{{ asset('js/app.js') }}" defer></script>
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <!--@vite(['resources/css/app.css', 'resources/js/app.js'])-->
 </head>
 
 <body class="font-sans antialiased">
-    <!--<x-jet-banner />-->
-
-    <!--<div class="min-h-screen bg-white-100">-->
-
-
-        <!-- Page Heading -->
-        <!--{{-- @if (isset($header))-->
-        <!--        <header class="bg-white shadow">-->
-        <!--            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">-->
-        <!--                {{ $header }}-->
-        <!--            </div>-->
-        <!--        </header>-->
-        <!--    @endif --}}-->
-
-        <!-- Page Content -->
-        <!--<div class="grid grid-cols-12 h-[880px]">-->
-        <!--    <div class="col-span-2 p-8 flex flex-col space-y-6 border-r-[1px] border-gray-100">-->
-        <!--        <a href="{{route('cliente.index')}}" class="flex items-center p-2 border-[1px] border-gray-500 rounded-lg">-->
-        <!--            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stack" width="18"-->
-        <!--                height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"-->
-        <!--                stroke-linecap="round" stroke-linejoin="round">-->
-        <!--                <path stroke="none" d="M0 0h24v24H0z" />-->
-        <!--                <polyline points="12 4 4 8 12 12 20 8 12 4" />-->
-        <!--                <polyline points="4 12 12 16 20 12" />-->
-        <!--                <polyline points="4 16 12 20 20 16" />-->
-        <!--            </svg>-->
-        <!--            <span class="ml-2">Dashboard</span>-->
-        <!--        </a>-->
-
-
-
-
-
-
-
-                <!-- component -->
-<!--
-    FAQ - Frequently Asked Questions TailwindCSS Component
-    with <details> and <summary> tag with custom [open] animation.
-    Created by Surjith S M (@surjithctly)
-    See more components: https://web3components.dev
--->
-
-
-
-
-
-
-    <!--        </div>-->
-    <!--        <div class="col-span-10">-->
-    <!--            <main>-->
-
-    <!--            </main>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-
-
-    <!---->
-    <!-- component -->
+    
 <style>
     /* This example part of kwd-dashboard see https://kamona-wd.github.io/kwd-dashboard/ */
 /* So here we will write some classes to simulate dark mode and some of tailwind css config in our project */
@@ -171,6 +115,18 @@ th {
 }
 .select2-container--default .select2-selection--multiple {
     border-radius: 13px;
+    min-height: 45px;
+    height: auto;
+}
+.select2-container--default .select2-selection--single {
+    border-radius: 13px;
+    min-height: 45px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    margin: 8px 0px;
+}
+.select2-selection__arrow {
+    margin-top: 8px;
 }
 </style>
 
@@ -277,6 +233,13 @@ th {
                   >
                     Gestión de Personas
                   </a>
+                  <a
+                    href="{{route('personal.index')}}"
+                    role="menuitem"
+                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
+                  >
+                    Gestión de Personal
+                  </a>
                 </div>
               </div>
 
@@ -331,6 +294,13 @@ th {
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
                     Gestión de Ventas
+                  </a>
+                  <a
+                    href="{{route('compra.index')}}"
+                    role="menuitem"
+                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
+                  >
+                    Gestión de Compras
                   </a>
                   <a
                     href="{{route('cliente.index')}}"
@@ -695,7 +665,7 @@ th {
                     :aria-expanded="open ? 'true' : 'false'"
                     class="transition-opacity flex justify-center items-center duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
-                    <span class="mx-2">{{Auth::user()->name}}</span>
+                    <span class="mx-2">{{Auth::user()->persona->nombre}} {{Auth::user()->persona->persona}}</span>
                     <span class="sr-only">User menu</span>
                     <img class="w-10 h-10 rounded-full" src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4" alt="Ahmed Kamel" />
                   </button>
@@ -712,33 +682,30 @@ th {
                     x-transition:leave-end="translate-y-1/2 opacity-0"
                     @click.away="open = false"
                     @keydown.escape="open = false"
-                    class="absolute right-0 w-48 py-1 bg-white rounded-md shadow-lg top-12 ring-1 ring-black ring-opacity-5 dark:bg-dark focus:outline-none"
+                    class="absolute right-0 w-48 py-1 bg-white rounded-md shadow-lg top-12 ring-1 ring-black ring-opacity-5 dark:bg-dark focus:outline-none z-10"
                     tabindex="-1"
                     role="menu"
                     aria-orientation="vertical"
                     aria-label="User menu"
                   >
                     <a
-                      href="#"
+                      href="{{ route('profile.show') }}"
                       role="menuitem"
                       class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-blue-600"
                     >
-                      Your Profile
+                      Perfil
                     </a>
                     <a
-                      href="#"
-                      role="menuitem"
-                      class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-blue-600"
-                    >
-                      Settings
-                    </a>
-                    <a
+                      onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                       href="#"
                       role="menuitem"
                       class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-blue-600"
                     >
                       Logout
                     </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                   </div>
                 </div>
               </nav>
@@ -1821,10 +1788,39 @@ th {
       </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.6.x/dist/component.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
-
+<!--<script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.6.x/dist/component.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>-->
+@livewireScripts
 <script>
+// <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Selecciona todos los elementos con la clase 'btn-alert'
+    const buttons = document.querySelectorAll('.btn-eliminar');
+
+    buttons.forEach(function(button) {
+      // Agrega un evento de clic a cada botón
+      button.addEventListener('click', function(e) {
+        e.preventDefault(); // Previene el comportamiento predeterminado del enlace
+
+        // Muestra el cuadro de diálogo SweetAlert2
+        Swal.fire({
+          title: '¿Estás seguro de eliminar?',
+          text: 'Estás a punto de eliminar un registro.',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonText: 'Sí, eliminar',
+          cancelButtonText: 'Cancelar'
+        }).then((result) => {
+          // Si se hace clic en "Sí, redirigirme", redirige al enlace del botón
+          if (result.isConfirmed) {
+            window.location.href = button.getAttribute('href');
+          }
+        });
+      });
+    });
+  });
+
+    // const btnEliminar = document.querySelector('.eliminar')
       const setup = () => {
         const getTheme = () => {
           if (window.localStorage.getItem('dark')) {
@@ -1897,7 +1893,6 @@ th {
             $('.select2').select2();
         });
     </script>
-    @livewireScripts
 </body>
 
 </html>

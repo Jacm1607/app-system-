@@ -43,6 +43,28 @@
                         </div>
                         <div class=" col-span-1">
                             <p>
+                                <label class="text-gray-700" for="password">Contraseña</label>
+
+                            </p>
+                            <p>
+                                <input type="password" id="password" onmouseout="hidePwd()" onmouseover="showPwd()" class="w-full rounded-xl text-gray-700 bg-gray-100 border-gray-200" 
+                                    value="12345678**" disabled>
+                            </p>
+                            @error('email')
+                                <div class="text-red-500">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <script>
+                            var passwordInput = document.getElementById('password');
+                            function showPwd() {
+                                passwordInput.type = 'text';
+                            }
+                            function hidePwd() {
+                                passwordInput.type = 'password';
+                            }
+                        </script>
+                        <div class=" col-span-1">
+                            <p>
                                 <label class="text-gray-700" for="idRol">Rol</label>
                             </p>
                             <p>

@@ -1,10 +1,10 @@
 <x-jet-action-section>
     <x-slot name="title">
-        Eliminar cuenta
+        <span class="dark:text-light text-gray-700">Eliminar cuenta</span>
     </x-slot>
 
     <x-slot name="description">
-        Eliminar permanentemente la cuenta
+        <span class="dark:text-light text-gray-700">Eliminar permanentemente la cuenta</span>
     </x-slot>
 
     <x-slot name="content">
@@ -21,14 +21,14 @@
         <!-- Delete User Confirmation Modal -->
         <x-jet-dialog-modal wire:model="confirmingUserDeletion">
             <x-slot name="title">
-                Borrar cuenta
+                <span class="text-black">Borrar cuenta</span>
             </x-slot>
 
             <x-slot name="content">
-                ¿Estás seguro de que quieres eliminar tu cuenta? Una vez que se elimine su cuenta, todos sus recursos y datos se eliminarán permanentemente. Ingrese su contraseña para confirmar que desea eliminar permanentemente su cuenta.
+                <span class="text-gray-700">¿Estás seguro de que quieres eliminar tu cuenta? Una vez que se elimine su cuenta, todos sus recursos y datos se eliminarán permanentemente. Ingrese su contraseña para confirmar que desea eliminar permanentemente su cuenta.</span>
 
                 <div class="mt-4" x-data="{}" x-on:confirming-delete-user.window="setTimeout(() => $refs.password.focus(), 250)">
-                    <x-jet-input type="password" class="mt-1 block w-3/4"
+                    <x-jet-input type="password" class="mt-1 block w-3/4 text-black"
                                 placeholder="{{ __('Password') }}"
                                 x-ref="password"
                                 wire:model.defer="password"

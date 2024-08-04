@@ -1,10 +1,10 @@
 <x-jet-action-section>
     <x-slot name="title">
-        Sesión activa
+        <span class="dark:text-light text-gray-700">Sesión activa</span>
     </x-slot>
 
     <x-slot name="description">
-        Administre y cierre sesión en sus sesiones activas en otros navegadores y dispositivos.
+        <span class="dark:text-light text-gray-700">Administre y cierre sesión en sus sesiones activas en otros navegadores y dispositivos.</span>
     </x-slot>
 
     <x-slot name="content">
@@ -64,14 +64,14 @@
         <!-- Log Out Other Devices Confirmation Modal -->
         <x-jet-dialog-modal wire:model="confirmingLogout">
             <x-slot name="title">
-                Cerrar sesión en otras sesiones del navegador
+                <span class="text-black">Cerrar sesión en otras sesiones del navegador</span>
             </x-slot>
 
             <x-slot name="content">
-                Ingrese su contraseña para confirmar que desea cerrar sesión en sus otras sesiones de navegador en todos sus dispositivos.
+                <span class="text-gray-700">Ingrese su contraseña para confirmar que desea cerrar sesión en sus otras sesiones de navegador en todos sus dispositivos.</span>
 
                 <div class="mt-4" x-data="{}" x-on:confirming-logout-other-browser-sessions.window="setTimeout(() => $refs.password.focus(), 250)">
-                    <x-jet-input type="password" class="mt-1 block w-3/4"
+                    <x-jet-input type="password" class="mt-1 block w-3/4 text-black"
                                 placeholder="{{ __('Password') }}"
                                 x-ref="password"
                                 wire:model.defer="password"

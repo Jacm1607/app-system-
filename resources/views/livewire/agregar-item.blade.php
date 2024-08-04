@@ -21,9 +21,9 @@
         </p>
         <p>
             <select wire:model="idPersona" class="w-full px-3 h-[45px] rounded-xl text-gray-700">
-                <option {{ $buttonDisabled ? '' : 'selected' }} hidden>Seleccione una opcion</option>
+                <option {{ $buttonDisabled ? '' : 'selected' }} hidden selected>Seleccione una opcion</option>
                 @forelse ($personas as $persona)
-                   <option value="{{ $persona->nombre }} {{ $persona->apellido }}">{{ $persona->nombre }}</option>
+                   <option value="{{ $persona->persona->nombre }} {{ $persona->persona->apellido }}">{{ $persona->persona->nombre }} {{ $persona->persona->apellido }}</option>
                 @empty
                     <option value="">SIN REGISTROS</option>
                 @endforelse
