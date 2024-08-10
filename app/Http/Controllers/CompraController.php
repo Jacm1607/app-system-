@@ -56,6 +56,7 @@ class CompraController extends Controller
             'idProveedor.required' => 'Campo requerido.',
         ]);
         $compra = new Compra();
+        $compra->idUsuario = $request->idUsuario;
         $compra->idProveedor = $request->idProveedor;
         $compra->created_at = $request->fecha;
         $compra->save();

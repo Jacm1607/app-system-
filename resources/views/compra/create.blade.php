@@ -9,6 +9,7 @@
                 </div>
                 <form method="POST" action="{{ route('compra.store') }}" class="p-6">
                     @csrf
+                    <input type="hidden" name="idUsuario" value="{{auth()->user()->id}}">
                     <div class="grid grid-cols-6 gap-8">
                         <div class="col-span-6">
                             <div class="flex justify-between">

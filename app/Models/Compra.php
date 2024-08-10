@@ -9,7 +9,7 @@ class Compra extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['idProveedor', 'estado'];
+    protected $fillable = ['idProveedor', 'idUsuario', 'estado'];
     
         public function proveedor()
     {

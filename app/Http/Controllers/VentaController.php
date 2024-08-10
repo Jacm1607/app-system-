@@ -55,6 +55,7 @@ class VentaController extends Controller
             'idCliente.required' => 'Campo requerido.',
         ]);
         $venta = new Venta();
+        $venta->idUsuario = $request->idUsuario;
         $venta->idCliente = $request->idCliente;
         $venta->created_at = $request->fecha;
         $venta->save();
