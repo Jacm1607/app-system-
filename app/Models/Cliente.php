@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Cliente extends Model
 {
     use HasFactory;
-    protected $fillable = ['idPersona', 'recurrente', 'fuente_referencia', 'estado'];
+    protected $fillable = ['id_persona', 'recurrente', 'fuente_referencia', 'estado'];
 
     public function persona()
     {
-        return $this->hasOne(Persona::class, 'id', 'idPersona');
+        return $this->hasOne(Persona::class, 'id', 'id_persona');
     }
 }

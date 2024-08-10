@@ -9,5 +9,5 @@ class Detalleventa extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['idVenta', 'nombre', 'personal', 'cantidad', 'precio', 'subtotal', 'estado'];
+    protected $fillable = ['id_venta', 'nombre', 'personal', 'cantidad', 'precio', 'subtotal', 'estado'];
 }

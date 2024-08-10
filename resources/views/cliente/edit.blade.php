@@ -14,11 +14,11 @@
                     <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idPersona">Persona</label>
+                                <label class="text-gray-700" for="id_persona">Persona</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
-                                    <option value="{{$cliente->idPersona}}">{{$cliente->persona->nombre}} {{$cliente->persona->apellido}}</option>
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_persona" id="id_persona">
+                                    <option value="{{$cliente->id_persona}}">{{$cliente->persona->nombre}} {{$cliente->persona->apellido}}</option>
                                     @forelse ($personas as $persona)
                                         <option value="{{ $persona->id }}">{{ $persona->nombre }}
                                             {{ $persona->apellido }}</option>

@@ -19,6 +19,6 @@ class Rol extends Model
      */
     public function privilegios(): BelongsToMany
     {
-        return $this->belongsToMany(Privilegio::class, 'rol_privilegio', 'idRol', 'idPrivilegio');
+        return $this->belongsToMany(Privilegio::class, 'rol_privilegio', 'id_rol', 'id_privilegio');
     }
 }

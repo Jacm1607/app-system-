@@ -43,7 +43,7 @@ CREATE TABLE `areas` (
 
 CREATE TABLE `clientes` (
   `id` int(11) NOT NULL,
-  `idPersona` int(11) NOT NULL,
+  `id_persona` int(11) NOT NULL,
   `razon_social` text NOT NULL,
   `nit` text NOT NULL,
   `estado` tinyint(1) NOT NULL DEFAULT 1,
@@ -162,7 +162,7 @@ CREATE TABLE `productos` (
 
 CREATE TABLE `proveedores` (
   `id` int(11) NOT NULL,
-  `idPersona` int(11) NOT NULL,
+  `id_persona` int(11) NOT NULL,
   `razon_social` text NOT NULL,
   `empresa` text NOT NULL,
   `estado` tinyint(1) NOT NULL DEFAULT 1,

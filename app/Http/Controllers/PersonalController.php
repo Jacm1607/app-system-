@@ -34,41 +34,41 @@ class PersonalController extends Controller
     public function edit ($id) {
         //privilegio('cliente-edit');
         $personal = Personal::findOrFail($id);
-        $servicios = Servicio::where('estado', '1')->where('id', '!=', $personal->idServicio)->get();
-        $areas = Area::where('estado', '1')->where('id', '!=', $personal->idArea)->get();
+        $servicios = Servicio::where('estado', '1')->where('id', '!=', $personal->id_servicio)->get();
+        $areas = Area::where('estado', '1')->where('id', '!=', $personal->id_area)->get();
         return view('personal.edit')->with('personal', $personal)->with('servicios', $servicios)->with('areas', $areas);
     }
     
     public function update (Request $request, $id) {
         //privilegio('cliente-update');
         $request->validate([
-            'idPersona' => 'required',
-            'idServicio' => 'required',
+            'id_persona' => 'required',
+            'id_servicio' => 'required',
         ],[
-            'idPersona.required' => 'Campo requerido.',
-            //'idPersona.unique' => 'Personal ya registrado.',
-            'idServicio.required' => 'Campo requerido.',
+            'id_persona.required' => 'Campo requerido.',
+            //'id_persona.unique' => 'Personal ya registrado.',
+            'id_servicio.required' => 'Campo requerido.',
         ]);
         $personal = Personal::findOrFail($id);
-        $personal->idPersona = $request->idPersona;
-        $personal->idServicio = $request->idServicio;
-        $personal->idArea = $request->idArea;
+        $personal->id_persona = $request->id_persona;
+        $personal->id_servicio = $request->id_servicio;
+        $personal->id_area = $request->id_area;
         $personal->update();
         return redirect()->route('personal.index');
     }
     
     public function store(Request $request) {
         $request->validate([
-            'idPersona' => 'required|unique:personales,idPersona',
-            'idServicio' => 'required',
+            'id_persona' => 'required|unique:personales,id_persona',
+            'id_servicio' => 'required',
         ],[
-            'idPersona.required' => 'Campo requerido.',
-            'idPersona.unique' => 'Personal ya registrado.',
-            'idServicio.required' => 'Campo requerido.',
+            'id_persona.required' => 'Campo requerido.',
+            'id_persona.unique' => 'Personal ya registrado.',
+            'id_servicio.required' => 'Campo requerido.',
         ]);
         $personal = new Personal();
-        $personal->idPersona = $request->idPersona;
-        $personal->idServicio = $request->idServicio;
+        $personal->id_persona = $request->id_persona;
+        $personal->id_servicio = $request->id_servicio;
         $personal->save();
         return redirect()->route('personal.index');
     }

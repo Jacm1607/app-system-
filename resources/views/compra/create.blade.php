@@ -9,16 +9,16 @@
                 </div>
                 <form method="POST" action="{{ route('compra.store') }}" class="p-6">
                     @csrf
-                    <input type="hidden" name="idUsuario" value="{{auth()->user()->id}}">
+                    <input type="hidden" name="id_usuario" value="{{auth()->user()->id}}">
                     <div class="grid grid-cols-6 gap-8">
                         <div class="col-span-6">
                             <div class="flex justify-between">
                                 <div class="w-1/3">
                                     <p>
-                                        <label class="text-gray-700" for="idProveedor">Proveedor</label>
+                                        <label class="text-gray-700" for="id_proveedor">Proveedor</label>
                                     </p>
                                     <p>
-                                        <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idProveedor" id="idProveedor">
+                                        <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_proveedor" id="id_proveedor">
                                             <option value="" hidden>Seleccione una opcion</option>
                                             @forelse ($proveedores as $proveedor)
                                                 <option value="{{ $proveedor->id }}">{{ $proveedor->razon_social }}</option>
@@ -27,7 +27,7 @@
                                             @endforelse
                                         </select>
                                     </p>
-                                    @error('idProveedor')
+                                    @error('id_proveedor')
                                         <div class="text-red-500">{{ $message }}</div>
                                     @enderror
                                 </div>                                    

@@ -51,20 +51,20 @@ class CompraController extends Controller
     {
         privilegio('compra-store');
         $request->validate([
-            'idProveedor' => 'required',
+            'id_proveedor' => 'required',
         ],[
-            'idProveedor.required' => 'Campo requerido.',
+            'id_proveedor.required' => 'Campo requerido.',
         ]);
         $compra = new Compra();
-        $compra->idUsuario = $request->idUsuario;
-        $compra->idProveedor = $request->idProveedor;
+        $compra->id_usuario = $request->id_usuario;
+        $compra->id_proveedor = $request->id_proveedor;
         $compra->created_at = $request->fecha;
         $compra->save();
         $productos = Session::get('productos');
         
         foreach ($productos as $producto) {
             $detallecompra = new Detallecompra();
-            $detallecompra->idCompra = $compra->id;
+            $detallecompra->id_compra = $compra->id;
             $detallecompra->nombre = $producto->nombre;
             $detallecompra->cantidad = $producto->cantidad;
             $detallecompra->precio = $producto->precio_compra;
@@ -89,7 +89,7 @@ class CompraController extends Controller
     {
         privilegio('compra-show');
         $compra = Compra::findOrFail($id);
-        $detalles = Detallecompra::where('idCompra', $compra->id)->get();
+        $detalles = Detallecompra::where('id_compra', $compra->id)->get();
         return view('compra.show')->with('compra', $compra)->with('detalles', $detalles);
     }
 

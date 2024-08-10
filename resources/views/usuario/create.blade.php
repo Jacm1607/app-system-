@@ -12,10 +12,10 @@
                     <div class="grid grid-cols-4 gap-8 mb-4">
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idPersona">Persona</label>
+                                <label class="text-gray-700" for="id_persona">Persona</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_persona" id="id_persona">
                                     @forelse ($personas as $persona)
                                         <option value="{{ $persona->id }}">{{ $persona->nombre }}
                                             {{ $persona->apellido }}</option>
@@ -24,7 +24,7 @@
                                     @endforelse
                                 </select>
                             </p>
-                            @error('idPersona')
+                            @error('id_persona')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>
@@ -65,10 +65,10 @@
                         </script>
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idRol">Rol</label>
+                                <label class="text-gray-700" for="id_rol">Rol</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idRol" id="idRol">
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_rol" id="id_rol">
                                     @forelse ($roles as $rol)
                                         <option value="{{ $rol->id }}">{{ $rol->nombre }}</option>
                                     @empty
@@ -76,7 +76,7 @@
                                     @endforelse
                                 </select>
                             </p>
-                            @error('idRol')
+                            @error('id_rol')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>

@@ -29,17 +29,17 @@ class ClienteController extends Controller
     public function store(Request $request) {
         privilegio('cliente-store');
         $request->validate([
-            'idPersona' => 'required|unique:clientes,idPersona',
+            'id_persona' => 'required|unique:clientes,id_persona',
             'recurrente' => 'required|boolean',
             'fuente_referencia' => 'regex:/^[a-zA-Z]+$/u|max:255',
         ],[
-            'idPersona.required' => 'Campo requerido.',
-            'idPersona.unique' => 'Cliente registrado.',
+            'id_persona.required' => 'Campo requerido.',
+            'id_persona.unique' => 'Cliente registrado.',
             'recurrente.required' => 'Campo requerido.',
             'fuente_referencia.regex' => 'Solo se admite letras.'
         ]);
         $cliente = new Cliente();
-        $cliente->idPersona = $request->idPersona;
+        $cliente->id_persona = $request->id_persona;
         $cliente->recurrente = $request->recurrente;
         $cliente->fuente_referencia = $request->fuente_referencia ?? 'Ninguna';
         $cliente->save();
@@ -49,24 +49,24 @@ class ClienteController extends Controller
     public function edit ($id) {
         privilegio('cliente-edit');
         $cliente = Cliente::findOrFail($id);
-        $personas = Persona::where('estado', '1')->where('id', '!=', $cliente->idPersona)->get();
+        $personas = Persona::where('estado', '1')->where('id', '!=', $cliente->id_persona)->get();
         return view('cliente.edit')->with('cliente', $cliente)->with('personas', $personas);
     }
 
     public function update (Request $request, $id) {
         privilegio('cliente-update');
         $request->validate([
-            'idPersona' => 'required',
+            'id_persona' => 'required',
             'recurrente' => 'required|boolean',
             'fuente_referencia' => 'regex:/^[a-zA-Z]+$/u|max:255',
         ],[
-            'idPersona.required' => 'Campo requerido.',
-            //'idPersona.unique' => 'Cliente registrado.',
+            'id_persona.required' => 'Campo requerido.',
+            //'id_persona.unique' => 'Cliente registrado.',
             'recurrente.required' => 'Campo requerido.',
             'fuente_referencia.regex' => 'Solo se admite letras.'
         ]);
         $cliente = Cliente::findOrFail($id);
-        $cliente->idPersona = $request->idPersona;
+        $cliente->id_persona = $request->id_persona;
         $cliente->recurrente = $request->recurrente;
         $cliente->fuente_referencia = $request->fuente_referencia ?? 'Ninguna';
         $cliente->update();

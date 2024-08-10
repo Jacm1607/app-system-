@@ -79,7 +79,7 @@
                                                     </td>
                                                     <td
                                                             class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                        @if($personal->idServicio == 0)
+                                                        @if($personal->id_servicio == 0)
                                                             Sin asignar
                                                         @else
                                                         {{ $personal->area->nombre }}
@@ -87,7 +87,7 @@
                                                             </td>
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                        @if($personal->idServicio == 0)
+                                                        @if($personal->id_servicio == 0)
                                                             Sin asignar
                                                         @else
                                                         {{ $personal->servicio->nombre }}

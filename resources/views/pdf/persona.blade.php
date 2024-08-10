@@ -62,7 +62,7 @@ td {
                         {{$persona->nombre}} {{$persona->apellido}}
                       </td>
                       <td class="whitespace-nowrap text-sm font-normal border-2 px-4 text-gray-900">
-                        @if($persona->idTipoPersona == 1)
+                        @if($persona->id_tipo_persona == 1)
                             Personal
                         @else
                             Cliente

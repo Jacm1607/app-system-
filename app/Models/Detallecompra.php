@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Detallecompra extends Model
 {
     use HasFactory;
-    protected $fillable = ['idCompra', 'nombre', 'cantidad', 'precio', 'subtotal', 'estado'];
+    protected $fillable = ['id_compra', 'nombre', 'cantidad', 'precio', 'subtotal', 'estado'];
 }

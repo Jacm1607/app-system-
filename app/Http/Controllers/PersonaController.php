@@ -35,7 +35,7 @@ class PersonaController extends Controller
             'apellido' => 'required|regex:/^[a-zA-Z\s]*$/',
             'celular' => 'required|numeric|regex:/^[67]\d{7}$/',
             'fecha_nac' => 'required',
-            'idTipoPersona' => 'required',
+            'id_tipo_persona' => 'required',
         ],[
             'nombre.required' => 'Campo requerido.',
             'nombre.regex' => 'Ingrese solo letras, no esta permitido otro caracteres especiales.',
@@ -45,25 +45,25 @@ class PersonaController extends Controller
             'celular.numeric' => 'Ingrese solo numeros.',
             'celular.regex' => 'Ingrese un número válido.',
             'fecha_nac.required' => 'Campo requerido.',
-            'idTipoPersona.required' => 'Campo requerido.'
+            'id_tipo_persona.required' => 'Campo requerido.'
         ]);
         $persona = new Persona();
         $persona->nombre = $request->nombre;
         $persona->apellido = $request->apellido;
         $persona->celular = $request->celular;
         $persona->fecha_nac = $request->fecha_nac;
-        $persona->idTipoPersona = $request->idTipoPersona;
+        $persona->id_tipo_persona = $request->id_tipo_persona;
         $persona->save();
-        if($request->idTipoPersona == 1){
+        if($request->id_tipo_persona == 1){
             $personal = new Personal();
-            $personal->idPersona = $persona->id;
-            $personal->idServicio = 0;
-            $personal->idArea = 0;
+            $personal->id_persona = $persona->id;
+            $personal->id_servicio = 0;
+            $personal->id_area = 0;
             $personal->save();
             return redirect()->route('personal.edit', $personal->id);
         } else {
             $cliente = new Cliente();
-            $cliente->idPersona = $persona->id;
+            $cliente->id_persona = $persona->id;
             $cliente->recurrente = 0;
             $cliente->fuente_referencia = 'Ninguna';
             $cliente->save();
@@ -74,7 +74,7 @@ class PersonaController extends Controller
     public function edit ($id) {
         privilegio('persona-edit');
         $persona = Persona::findOrFail($id);
-        $tipo_persona = TipoPersona::where('estado', '1')->where('id', '!=', $persona->idTipoPersona)->get();
+        $tipo_persona = TipoPersona::where('estado', '1')->where('id', '!=', $persona->id_tipo_persona)->get();
         return view('persona.edit')->with('persona', $persona)->with('tipo_persona', $tipo_persona);
     }
 
@@ -85,7 +85,7 @@ class PersonaController extends Controller
         $persona->apellido = $request->apellido;
         $persona->celular = $request->celular;
         $persona->fecha_nac = $request->fecha_nac;
-        $persona->idTipoPersona = $request->idTipoPersona;
+        $persona->id_tipo_persona = $request->id_tipo_persona;
         $persona->update();
         return redirect()->route('persona.index');
     }

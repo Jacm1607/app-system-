@@ -9,20 +9,20 @@ class Personal extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['idPersona', 'idArea', 'idServicio', 'estado'], 
+    protected $fillable = ['id_persona', 'id_area', 'id_servicio', 'estado'], 
     $table = 'personales';
     
     public function persona()
     {
-        return $this->hasOne(Persona::class, 'id', 'idPersona');
+        return $this->hasOne(Persona::class, 'id', 'id_persona');
     }
     public function servicio()
     {
-        return $this->hasOne(Servicio::class, 'id', 'idServicio');
+        return $this->hasOne(Servicio::class, 'id', 'id_servicio');
     }
     
     public function area()
     {
-        return $this->hasOne(Area::class, 'id', 'idArea');
+        return $this->hasOne(Area::class, 'id', 'id_area');
     }
 }

@@ -50,20 +50,20 @@ class VentaController extends Controller
     {
         privilegio('venta-store');
         $request->validate([
-            'idCliente' => 'required',
+            'id_cliente' => 'required',
         ],[
-            'idCliente.required' => 'Campo requerido.',
+            'id_cliente.required' => 'Campo requerido.',
         ]);
         $venta = new Venta();
-        $venta->idUsuario = $request->idUsuario;
-        $venta->idCliente = $request->idCliente;
+        $venta->id_usuario = $request->id_usuario;
+        $venta->id_cliente = $request->id_cliente;
         $venta->created_at = $request->fecha;
         $venta->save();
         $servicios = Session::get('servicios');
         
         foreach ($servicios as $servicio) {
             $detalleventa = new Detalleventa();
-            $detalleventa->idVenta = $venta->id;
+            $detalleventa->id_venta = $venta->id;
             $detalleventa->nombre = $servicio->nombre;
             $detalleventa->personal = $servicio->persona;
             $detalleventa->cantidad = $servicio->cantidad;
@@ -84,7 +84,7 @@ class VentaController extends Controller
     {
         privilegio('venta-show');
         $venta = Venta::findOrFail($id);
-        $detalles = Detalleventa::where('idVenta', $venta->id)->get();
+        $detalles = Detalleventa::where('id_venta', $venta->id)->get();
         return view('venta.show')->with('venta', $venta)->with('detalles', $detalles);
     }
 

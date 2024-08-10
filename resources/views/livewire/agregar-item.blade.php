@@ -4,7 +4,7 @@
             <label class="text-gray-700" for="idServicios">Servicios</label>
         </p>
         <p>
-            <select wire:model="idServicio" class="w-full px-3 h-[45px] rounded-xl text-gray-700">
+            <select wire:model="id_servicio" class="w-full px-3 h-[45px] rounded-xl text-gray-700">
                 <option {{ $buttonDisabled ? '' : 'selected' }} hidden>Seleccione una opcion</option>
                 @forelse ($servicios as $servicio)
                    <option value="{{ $servicio->id }}">{{ $servicio->nombre }} - {{ $servicio->precio }} Bs.</option>
@@ -20,7 +20,7 @@
             <label class="text-gray-700" for="persona">Asignar a</label>
         </p>
         <p>
-            <select wire:model="idPersona" class="w-full px-3 h-[45px] rounded-xl text-gray-700">
+            <select wire:model="id_persona" class="w-full px-3 h-[45px] rounded-xl text-gray-700">
                 <option {{ $buttonDisabled ? '' : 'selected' }} hidden selected>Seleccione una opcion</option>
                 @forelse ($personas as $persona)
                    <option value="{{ $persona->persona->nombre }} {{ $persona->persona->apellido }}">{{ $persona->persona->nombre }} {{ $persona->persona->apellido }}</option>
@@ -29,7 +29,7 @@
                 @endforelse
             </select>
         </p>
-        @error('idPersona') <span class="text-red-500">{{ $message }}</span> @enderror
+        @error('id_persona') <span class="text-red-500">{{ $message }}</span> @enderror
     </div>
     <div class="col-span-1">
         <p>

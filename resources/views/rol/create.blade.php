@@ -23,10 +23,10 @@
                         </div>
                         <div class="col-span-3">
                             <p>
-                                <label class="text-gray-700" for="idPrivilegio">Privilegio</label>
+                                <label class="text-gray-700" for="id_privilegio">Privilegio</label>
                             </p>
                             <p>
-                                <select class="w-full h-[55px] rounded-xl text-gray-700 select2"  name="idPrivilegio[]" id="idPrivilegio" multiple>
+                                <select class="w-full h-[55px] rounded-xl text-gray-700 select2"  name="id_privilegio[]" id="id_privilegio" multiple>
                                     @forelse ($privilegios as $privilegio)
                                         <option value="{{ $privilegio->id }}">{{ $privilegio->nombre }}</option>
                                     @empty
@@ -34,7 +34,7 @@
                                     @endforelse
                                 </select>
                             </p>
-                            @error('idPrivilegio')
+                            @error('id_privilegio')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>

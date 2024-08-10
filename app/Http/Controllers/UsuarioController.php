@@ -31,17 +31,17 @@ class UsuarioController extends Controller
     public function store(Request $request) {
         privilegio('usuario-store');
         $request->validate([
-            'idPersona' => 'required',
+            'id_persona' => 'required',
             'email' => 'required|email|unique:users,email',
         ],[
-            'idPersona.required' => 'Campo requerido.',
+            'id_persona.required' => 'Campo requerido.',
             'email.unique' => 'Este email ya esta siendo usado.',
             'email.required' => 'Campo requerido.',
             'email.email' => 'Ingrese en formato email.',
         ]);
         $usuario = new User();
-        $usuario->idPersona = $request->idPersona;
-        $usuario->idRol = $request->idRol;
+        $usuario->id_persona = $request->id_persona;
+        $usuario->id_rol = $request->id_rol;
         $usuario->email = $request->email;
         $usuario->name = $request->email;
         $usuario->password = Hash::make('12345678');
@@ -52,16 +52,16 @@ class UsuarioController extends Controller
     public function edit ($id) {
         privilegio('usuario-edit');
         $usuario = User::findOrFail($id);
-        $personas = Persona::where('estado', '1')->where('id', '!=', $usuario->idPersona)->get();
-        $roles = Rol::where('estado', '1')->where('id', '!=', $usuario->idRol)->get();
+        $personas = Persona::where('estado', '1')->where('id', '!=', $usuario->id_persona)->get();
+        $roles = Rol::where('estado', '1')->where('id', '!=', $usuario->id_rol)->get();
         return view('usuario.edit')->with('usuario', $usuario)->with('personas', $personas)->with('roles', $roles);
     }
 
     public function update (Request $request, $id) {
         privilegio('usuario-update');
         $usuario = User::findOrFail($id);
-        $usuario->idPersona = $request->idPersona;
-        $usuario->idRol = $request->idRol;
+        $usuario->id_persona = $request->id_persona;
+        $usuario->id_rol = $request->id_rol;
         $usuario->email = $request->email;
         $usuario->name = $request->email;
         $usuario->update();

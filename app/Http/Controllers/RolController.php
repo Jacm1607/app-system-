@@ -37,7 +37,7 @@ class RolController extends Controller
         $rol = new Rol();
         $rol->nombre = $request->nombre;
         $rol->save();
-        $rol->privilegios()->attach($request->idPrivilegio);
+        $rol->privilegios()->attach($request->id_privilegio);
         return redirect()->route('rol.index');
     }
 
@@ -54,7 +54,7 @@ class RolController extends Controller
         $rol->nombre = $request->nombre;
         $rol->update();
         $rol->privilegios()->detach();
-        $rol->privilegios()->attach($request->idPrivilegio);
+        $rol->privilegios()->attach($request->id_privilegio);
         return redirect()->route('rol.index');
     }
 

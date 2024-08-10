@@ -11,8 +11,8 @@ class AgregarItem extends Component
 {
     protected $listeners = ['getServices' => 'getServices'];
     
-    public $idServicio = '';
-    public $idPersona = '';
+    public $id_servicio = '';
+    public $id_persona = '';
     public $idServicios = [];
     public $personas = [];
     public $buttonDisabled = true;
@@ -23,7 +23,7 @@ class AgregarItem extends Component
     
     protected $rules = [
         'cantidad' => 'required|numeric|min:1|max:10',
-        'idPersona' => 'required',
+        'id_persona' => 'required',
     ];
     
     protected $messages = [
@@ -31,7 +31,7 @@ class AgregarItem extends Component
         'cantidad.numeric' => 'Ingrese un numero valido.',
         'cantidad.min' => 'Valor minimo 1.',
         'cantidad.max' => 'Valor maximo 10.',
-        'idPersona.required' => 'Campo requerido.',
+        'id_persona.required' => 'Campo requerido.',
     ];
     
     public function mount () {
@@ -54,8 +54,8 @@ class AgregarItem extends Component
     }
     
     public function updatedIdServicio() {
-        $objetoSeleccionado = Servicio::find($this->idServicio);
-        $personasObj = Personal::where('estado', '1')->where('idServicio', "$objetoSeleccionado->id")->get();
+        $objetoSeleccionado = Servicio::find($this->id_servicio);
+        $personasObj = Personal::where('estado', '1')->where('id_servicio', "$objetoSeleccionado->id")->get();
         //dd($personasObj);
         $this->personas = $personasObj;
         //dd($this->personas);
@@ -70,7 +70,7 @@ class AgregarItem extends Component
         array_push($this->idServicios, $__servicio->id);
         Session::put('id_servicios', $this->idServicios);
         $__servicio->cantidad = $this->cantidad;
-        $__servicio->persona = $this->idPersona;
+        $__servicio->persona = $this->id_persona;
         $__servicio->subtotal = $__servicio->precio * $this->cantidad;
         $servicio_ = json_decode($__servicio);
         $__servicios = Session::get('servicios');

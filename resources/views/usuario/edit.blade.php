@@ -14,11 +14,11 @@
                     <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idPersona">Persona</label>
+                                <label class="text-gray-700" for="id_persona">Persona</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
-                                    <option value="{{$usuario->idPersona}}">{{$usuario->persona->nombre}} {{$usuario->persona->apellido}}</option>
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_persona" id="id_persona">
+                                    <option value="{{$usuario->id_persona}}">{{$usuario->persona->nombre}} {{$usuario->persona->apellido}}</option>
                                     @forelse ($personas as $persona)
                                         <option value="{{ $persona->id }}">{{ $persona->nombre }}
                                             {{ $persona->apellido }}</option>
@@ -43,11 +43,11 @@
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idRol">Rol</label>
+                                <label class="text-gray-700" for="id_rol">Rol</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idRol" id="idRol">
-                                    <option value="{{$usuario->idRol}}">{{$usuario->rol->nombre}}</option>
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_rol" id="id_rol">
+                                    <option value="{{$usuario->id_rol}}">{{$usuario->rol->nombre}}</option>
                                     @forelse ($roles as $rol)
                                         <option value="{{ $rol->id }}">{{ $rol->nombre }}</option>
                                     @empty

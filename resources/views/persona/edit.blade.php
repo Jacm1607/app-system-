@@ -53,11 +53,11 @@
                         </div>
                         <div class="col-span-2">
                             <p>
-                                <label class="text-gray-700" for="idTipoPersona">Tipo de persona</label>
+                                <label class="text-gray-700" for="id_tipo_persona">Tipo de persona</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idTipoPersona" id="idTipoPersona">
-                                    <option value="{{$persona->idTipoPersona}}" >{{$persona->tipo->nombre}}</option>
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_tipo_persona" id="id_tipo_persona">
+                                    <option value="{{$persona->id_tipo_persona}}" >{{$persona->tipo->nombre}}</option>
                                     @forelse ($tipo_persona as $tp)
                                         <option value="{{ $tp->id }}">{{ $tp->nombre }}</option>
                                     @empty
@@ -65,7 +65,7 @@
                                     @endforelse
                                 </select>
                             </p>
-                            @error('idTipoPersona')
+                            @error('id_tipo_persona')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>

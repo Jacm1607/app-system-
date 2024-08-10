@@ -14,21 +14,21 @@
                     <div class="grid grid-cols-4 gap-8">
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idPersona">Persona</label>
+                                <label class="text-gray-700" for="id_persona">Persona</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idPersona" id="idPersona">
-                                    <option value="{{$personal->idPersona}}">{{$personal->persona->nombre}} {{$personal->persona->apellido}}</option>
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_persona" id="id_persona">
+                                    <option value="{{$personal->id_persona}}">{{$personal->persona->nombre}} {{$personal->persona->apellido}}</option>
                                 </select>
                             </p>
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idServicio">Servicio</label>
+                                <label class="text-gray-700" for="id_servicio">Servicio</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idServicio" id="idServicio">
-                                    @if($personal->idServicio == 0)
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_servicio" id="id_servicio">
+                                    @if($personal->id_servicio == 0)
                                         <option value="0" hidden>SIN ASIGNAR</option>
                                         @forelse ($servicios as $servicio)
                                             <option value="{{ $servicio->id }}">{{ $servicio->nombre }}</option>
@@ -36,7 +36,7 @@
                                             <option value="">SIN REGISTROS</option>
                                         @endforelse
                                     @else
-                                        <option value="{{ $personal->idServicio }}">{{ $personal->servicio->nombre }}</option>
+                                        <option value="{{ $personal->id_servicio }}">{{ $personal->servicio->nombre }}</option>
                                         @forelse ($servicios as $servicio)
                                             <option value="{{ $servicio->id }}">{{ $servicio->nombre }}</option>
                                         @empty
@@ -45,20 +45,20 @@
                                     @endif
                                 </select>
                             </p>
-                            @error('idServicio')
+                            @error('id_servicio')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class=" col-span-1">
                             <p>
-                                <label class="text-gray-700" for="idArea">Area</label>
+                                <label class="text-gray-700" for="id_area">Area</label>
                             </p>
                             <p>
-                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="idArea" id="idArea">
-                                    @if($personal->idServicio == 0)
+                                <select class="w-full px-3 h-[45px] rounded-xl text-gray-700" name="id_area" id="id_area">
+                                    @if($personal->id_servicio == 0)
                                         <option value="0" hidden>SIN ASIGNAR</option>
                                     @else
-                                     <option value="{{ $personal->idArea }}">{{ $personal->area->nombre }}</option>
+                                     <option value="{{ $personal->id_area }}">{{ $personal->area->nombre }}</option>
                                     @endif
                                     @forelse ($areas as $area)
                                         <option value="{{ $area->id }}">{{ $area->nombre }}</option>
@@ -67,7 +67,7 @@
                                     @endforelse
                                 </select>
                             </p>
-                            @error('idArea')
+                            @error('id_area')
                                 <div class="text-red-500">{{ $message }}</div>
                             @enderror
                         </div>

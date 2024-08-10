@@ -9,10 +9,10 @@ class Compra extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['idProveedor', 'idUsuario', 'estado'];
+    protected $fillable = ['id_proveedor', 'id_usuario', 'estado'];
     
         public function proveedor()
     {
-        return $this->hasOne(Proveedor::class, 'id', 'idProveedor');
+        return $this->hasOne(Proveedor::class, 'id', 'id_proveedor');
     }
 }
