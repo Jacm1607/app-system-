@@ -310,11 +310,11 @@ th {
                     Gestión de Clientes
                   </a>
                   <a
-                    href="{{route('proveedor.index')}}"
+                    href="{{route('producto.index')}}"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
-                    Gestión de Proveedores
+                    Gestión de Productos
                   </a>
                 </div>
               </div>
@@ -366,11 +366,11 @@ th {
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a
-                    href="{{route('producto.index')}}"
+                    href="{{route('proveedor.index')}}"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
-                    Gestión de Productos
+                    Gestión de Proveedores
                   </a>
                   <a
                     href="{{route('servicio.index')}}"
