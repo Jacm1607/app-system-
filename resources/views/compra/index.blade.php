@@ -58,8 +58,8 @@
                                                     {{$compra->created_at}}</td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
-                                                    <a class="p-2 bg-blue-500 text-white rounded-xl" href="{{route('compra.show', $compra->id)}}">🔍 Ver</a>
-                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('compra.delete', $compra->id) }}">🗑 Eliminar</a>
+                                                    <a class="p-2 bg-blue-500 text-white rounded-xl" href="{{route('compra.show', $compra->id)}}"><i class="fa-solid fa-magnifying-glass"></i> Ver</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('compra.delete', $compra->id) }}"><i class="fa-solid fa-trash"></i> Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty
