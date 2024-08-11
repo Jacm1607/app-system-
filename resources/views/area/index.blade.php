@@ -51,8 +51,8 @@
                                                 </td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4 text-center">
-                                                    <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('area.edit', $area->area->id) }}"><i class="fa-solid fa-pencil"></i> Editar</a>
-                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('cliente.delete', $area->area->id) }}"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                                                    <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('area.edit', $area->id) }}"><i class="fa-solid fa-pencil"></i> Editar</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('area.delete', $area->id) }}"><i class="fa-solid fa-trash"></i> Eliminar</a>
                                             </tr>
                                         @empty
                                             <td colspan="2" class="px-6 py-4">
