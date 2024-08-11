@@ -21,9 +21,10 @@ class ClienteController extends Controller
     }
 
     public function create() {
-        privilegio('cliente-create');
+        // function depecrated
+        /*privilegio('cliente-create');
         $personas = Persona::where('estado', '1')->get();
-        return view('cliente.create')->with('personas', $personas);
+        return view('cliente.create')->with('personas', $personas);*/
     }
 
     public function store(Request $request) {
