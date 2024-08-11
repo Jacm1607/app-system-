@@ -78,8 +78,8 @@
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">{{ $producto->cantidad }}
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
-                                                    <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('producto.edit', $producto->id) }}">✏ Editar</a>
-                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('producto.delete', $producto->id) }}">🗑 Eliminar</a>
+                                                    <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('producto.edit', $producto->id) }}"><i class="fa-solid fa-pencil"></i> Editar</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('producto.delete', $producto->id) }}"><i class="fa-solid fa-trash"></i> Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty

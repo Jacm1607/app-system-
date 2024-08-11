@@ -86,9 +86,9 @@
                                                     {{ $usuario->estado ? 'ACTIVO': 'INACTIVO' }}</td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
-                                                    <a class="btn-restaurar p-2 bg-cyan-500 text-black rounded-xl" href="{{ route('usuario.reset_password', $usuario->id) }}">⚙  Resetear password</a>
-                                                    <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('usuario.edit', $usuario->id) }}">✏ Editar</a>
-                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('usuario.delete', $usuario->id) }}">🗑 Eliminar</a>
+                                                    <a class="btn-restaurar p-2 bg-cyan-500 text-black rounded-xl" href="{{ route('usuario.reset_password', $usuario->id) }}"><i class="fa-solid fa-unlock"></i>  Resetear password</a>
+                                                    <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('usuario.edit', $usuario->id) }}"><i class="fa-solid fa-pencil"></i> Editar</a>
+                                                    <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('usuario.delete', $usuario->id) }}"><i class="fa-solid fa-trash"></i> Eliminar</a>
                                                 </td>
                                             </tr>
                                         @empty
