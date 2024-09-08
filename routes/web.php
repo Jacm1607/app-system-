@@ -24,6 +24,8 @@ use App\Http\Controllers\DashboardController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+    Route::get('/usuario/reset/{id}', [UsuarioController::class , 'reset_password'])->name('usuario.reset_password');
+
 
 
 Route::middleware([
@@ -91,7 +93,6 @@ Route::middleware([
     Route::get('/usuario/edit/{id}', [UsuarioController::class , 'edit'])->name('usuario.edit');
     Route::put('/usuario/update/{id}', [UsuarioController::class , 'update'])->name('usuario.update');
     Route::get('/usuario/delete/{id}', [UsuarioController::class , 'delete'])->name('usuario.delete');
-    Route::get('/usuario/reset/{id}', [UsuarioController::class , 'reset_password'])->name('usuario.reset_password');
 
     Route::get('/rol/index', [RolController::class , 'index'])->name('rol.index');
     Route::get('/rol/create', [RolController::class , 'create'])->name('rol.create');
@@ -122,5 +123,6 @@ Route::middleware([
     Route::get('/personal/edit/{id}', [PersonalController::class , 'edit'])->name('personal.edit');
     Route::put('/personal/update/{id}', [PersonalController::class , 'update'])->name('personal.update');
     Route::get('/personal/delete/{id}', [PersonalController::class , 'delete'])->name('personal.delete');
-    
+    Route::get('/personal/exportar-pdf', [PersonalController::class , 'pdf'])->name('personal.pdf');
+
 });

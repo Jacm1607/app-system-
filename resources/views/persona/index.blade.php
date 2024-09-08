@@ -78,6 +78,7 @@
                                         @endforelse
                                     </tbody>
                                 </table>
+                                {{$personas->links()}}
                             </div>
                         </div>
                     </div>

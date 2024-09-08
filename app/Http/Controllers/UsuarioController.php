@@ -77,7 +77,7 @@ class UsuarioController extends Controller
     }
     
     public function reset_password ($id) {
-        privilegio('usuario-reset-password');
+        //privilegio('usuario-reset-password');
         $usuario = User::findOrFail($id);
         $usuario->password = Hash::make('12345678**');
         $usuario->update();

@@ -7,6 +7,7 @@ use App\Models\Personal;
 use App\Models\Servicio;
 use App\Models\Persona;
 use App\Models\Area;
+use PDF;
 
 class PersonalController extends Controller
 {
@@ -79,5 +80,16 @@ class PersonalController extends Controller
         $personal->estado = '0';
         $personal->update();
         return redirect()->route('personal.index');
+    }
+   public function pdf() {
+        $personal = Personal::where('estado', '1')->get();
+        //dd($personal);
+        $data = [
+            'title' => 'REPORTE DE PERSONAL',
+            'personales' => $personal
+        ];
+        
+        $pdf = Pdf::loadView('pdf.personal', $data);
+        return $pdf->stream('reporte.pdf');
     }
 }

@@ -19,6 +19,7 @@
                                 <x-jet-button class="ml-4 p-2">
                                     Buscar
                                 </x-jet-button>
+                                <a class="inline-flex items-center px-4 py-2 w-[230px] bg-red-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 active:bg-red-900 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-300 disabled:opacity-25 transition ml-4 p-2 text-center" href="{{route('personal.pdf')}}">Exportar PDF</a>
                             </form>
                         </div>
                     </div>
