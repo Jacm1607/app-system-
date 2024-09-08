@@ -86,6 +86,7 @@ class PersonalController extends Controller
         //dd($personal);
         $data = [
             'title' => 'REPORTE DE PERSONAL',
+            'user' => auth()->user()->persona->nombre . ' ' . auth()->user()->persona->apellido,
             'personales' => $personal
         ];
         

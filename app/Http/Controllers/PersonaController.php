@@ -102,6 +102,7 @@ class PersonaController extends Controller
         $personas = Persona::where('estado', '1')->get();
         $data = [
             'title' => 'REPORTE DE PERSONAS',
+            'user' => auth()->user()->persona->nombre . ' ' . auth()->user()->persona->apellido,
             'personas' => $personas
         ];
         

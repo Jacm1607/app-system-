@@ -13,31 +13,28 @@ td {
   height: 10px;
   vertical-align: middle;
 }
+body: {
+    width:100%;
+}
 </style>
 <body>
-    <table>
+    <p class="text-center">{{$title}}</p>
+    <table class="w-full">
         <tbody>
             <tr>
-                <td style="vertical-align: middle;" class="h-16 w-16" rowspan="4"><img src="{{asset('img/logo.png')}}" alt="Logo de la empresa" style="height:40px"></td>
-            </tr>
-            <tr>
-                <td class="text-xs">Fabiola Spa</td>
-            </tr>
-            <tr>
-                <td class="text-xs">Av. Cañoto, sobre el 2do anillo</td>
-            </tr>
-            <tr>
-                <td class="text-xs">+591 773 46 774</td>
-            </tr>
-            <tr>
-                <td colspan="2" ></td>
-            </tr>
-            <tr>
-                <td colspan="2" >{{$title}}</td>
+                <td width="50%">
+                    <p><strong>Usuario:</strong> {{$user}}</p>    
+                </td>
+                <td style="vertical-align: middle;" class="h-16 w-16"><img src="{{asset('img/logo.png')}}" alt="Logo de la empresa" style="height:40px"></td>
+                 <td>
+                    <p class="text-xs">Fabiola Spa</p>
+                    <p class="text-xs">Av. Cañoto, sobre el 2do anillo</p>
+                    <p class="text-xs">+591 773 46 774</p>
+                </td>
             </tr>
         </tbody>
     </table>
-  <div class="col-span-6">
+  <div style="width: 100%">
     <div class="flex flex-col">
       <div class="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
         <div class="py-2 inline-block min-w-full">
