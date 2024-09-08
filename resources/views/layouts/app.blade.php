@@ -128,6 +128,13 @@ th {
 .select2-selection__arrow {
     margin-top: 8px;
 }
+.swal2-cancel {
+    background-color: red;
+}
+
+.swal2-confirm {
+    background-color: cornflowerblue;
+}
 </style>
 
 <div x-data="setup()" x-init="$refs.loading.classList.add('hidden');" :class="{ 'dark': isDark}">

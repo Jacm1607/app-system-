@@ -7,18 +7,26 @@
                         <h1 class="text-2xl text-gray-700">Detalle de compra</h1>
                     </div>
                 </div>
-                    <div class="grid grid-cols-6 gap-8 m-6">
-                        <div class="col-span-6" id="contenidoAImprimir">
-                            <div class="flex justify-between">
-                                <div class="w-1/3">
+                    <div class="m-6">
+                        <div class="" >
+                            <div class="grid grid-cols-6 gap-8">
+                                <div class="col-span-6 md:col-span-2">
                                     <p>
                                         <label class="text-gray-700" for="proveedor">Proveedor</label>
                                     </p>
                                     <p>
                                         <input type="text" class="w-full rounded-xl text-gray-700" value="{{$compra->proveedor->razon_social}}" disabled>
                                     </p>
-                                </div>                                    
-                                <div>
+                                </div>      
+                                <div class="col-span-6 md:col-span-2">
+                                    <p>
+                                        <label class="text-gray-700" for="Cliente">Usuario</label>
+                                    </p>
+                                    <p>
+                                        <input type="text" class="w-full rounded-xl text-gray-700" value="{{auth()->user()->persona->nombre}} {{auth()->user()->persona->apellido}}" disabled>
+                                    </p>
+                                </div>    
+                                <div class="col-span-6 md:col-span-2">
                                     <p>
                                         <label class="text-gray-700" for="fecha">Fecha</label>
                                     </p>
@@ -32,7 +40,7 @@
                                 <div class="border-b-2 border-gray-500 w-full"></div>
                             </div>
                             
-                            <div class="col-span-6">
+                            <div class="col-span-6" id="contenidoAImprimir">
                                 <div class="flex flex-col">
                                     <div class="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
                                         <div class="py-2 inline-block min-w-full">
@@ -106,11 +114,13 @@
                                 var ventanaImpresion = window.open('', '_blank');
                                 ventanaImpresion.document.write('<html><head><title>Imprimir</title>');
                                 ventanaImpresion.document.write('<style>table {border-collapse: collapse;width: 100%;} th, td {border: 1px solid #ddd;padding: 8px;text-align: left;} th {background-color: #f2f2f2;}</style>');
+                                ventanaImpresion.document.write('<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"><script>window.onload = function() { window.print() }<\/script></head><body><div class="w-full text-center font-bold text-lg">Recibo de Compra</div><div class="flex items-center justify-between p-4 bg-gray-100"><img src="{{asset("img/logo.png")}}" alt="Logo de la empresa" class="h-16"><div class="ml-4"><p class="text-lg font-bold">Fabiola Spa</p><p>Av. Cañoto, sobre el 2do anillo</p><p>+591 773 46 774</p></div></div>');
                                 ventanaImpresion.document.write('</head><body>');
+                                ventanaImpresion.document.write('<div class=""><table border="0"><tr><td><strong>Proveedor</strong></td><td><strong>Usuario</strong></td><td><strong>Fecha</strong></td></tr><tr><td>{{$compra->proveedor->razon_social}}</td><td>{{auth()->user()->persona->nombre}} {{auth()->user()->persona->apellido}}</td><td>{{ $compra->created_at }}</td></tr></table></div>');
                                 ventanaImpresion.document.write(contenido);
                                 ventanaImpresion.document.write('</body></html>');
                                 ventanaImpresion.document.close();
-                                ventanaImpresion.print();
+                                //ventanaImpresion.print();
                             }
                         </script>
                     </div>
