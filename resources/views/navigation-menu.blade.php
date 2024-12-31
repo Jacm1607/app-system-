@@ -150,7 +150,7 @@
 
                                 <x-jet-dropdown-link href="{{ route('logout') }}"
                                          @click.prevent="$root.submit();">
-                                    {{ __('Log Out') }}
+                                    Salir
                                 </x-jet-dropdown-link>
                             </form>
                         </x-slot>
@@ -211,7 +211,7 @@
 
                     <x-jet-responsive-nav-link href="{{ route('logout') }}"
                                    @click.prevent="$root.submit();">
-                        {{ __('Log Out') }}
+                        Salir
                     </x-jet-responsive-nav-link>
                 </form>
 

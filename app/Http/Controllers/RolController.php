@@ -12,8 +12,8 @@ class RolController extends Controller
     
     public function index (Request $request) {
         privilegio('rol-index');
-        if (isset($request->nombre)) {
-            $roles = Rol::where('nombre', 'LIKE', "%$request->nombre%")->where('estado', '1')->get();
+        if (isset($request->rol)) {
+            $roles = Rol::where('nombre', 'LIKE', "%$request->rol%")->where('estado', '1')->get();
         } else {
             $roles = Rol::where('estado', '1')->get();
         }

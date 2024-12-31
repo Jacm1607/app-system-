@@ -21,7 +21,7 @@ class PersonalController extends Controller
             //dd($personales[0]->personal->servicio);
         } else {
             $search = false;
-            $personales = Personal::where('estado', '1')->get();
+            $personales = Personal::where('estado', '1')->orderBy('id', 'desc')->paginate(10);
         }
         return view('personal.index')->with('personales', $personales)->with('search', $search);
     }

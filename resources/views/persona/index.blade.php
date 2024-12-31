@@ -78,7 +78,9 @@
                                         @endforelse
                                     </tbody>
                                 </table>
-                                {{$personas->links()}}
+                                @if(!request()->has('persona'))
+                                    {{$personas->links()}}
+                                @endif
                             </div>
                         </div>
                     </div>

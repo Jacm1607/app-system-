@@ -135,6 +135,9 @@ th {
 .swal2-confirm {
     background-color: cornflowerblue;
 }
+input {
+    color: dimgray;
+}
 </style>
 
 <div x-data="setup()" x-init="$refs.loading.classList.add('hidden');" :class="{ 'dark': isDark}">
@@ -718,11 +721,11 @@ th {
                     type="button"
                     aria-haspopup="true"
                     :aria-expanded="open ? 'true' : 'false'"
-                    class="transition-opacity flex justify-center items-center duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
+                    class="transition-opacity flex p-2 justify-center items-center duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
                     <span class="mx-2">{{Auth::user()->persona->nombre}} {{Auth::user()->persona->persona}}</span>
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4" alt="Ahmed Kamel" />
+                    <i class="fas fa-angle-down"></i>
                   </button>
 
                   <!-- User dropdown menu -->
@@ -756,7 +759,7 @@ th {
                       role="menuitem"
                       class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-blue-600"
                     >
-                      Logout
+                      Salir
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

@@ -46,7 +46,6 @@
                                     <tbody>
                                         @if($search)
                                                 @forelse ($personales as $personal)
-                                                    @if(!is_null($personal->personal) && !is_null($personal->personal->servicio))
                                                     <tr>
                                                         <td
                                                             class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
@@ -54,20 +53,19 @@
                                                         </td>
                                                         <td
                                                             class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                            {{ $personal->personal->area->nombre }}</td>
+                                                            {{ $personal->personal->area->nombre ?? 'Sin area' }}</td>
                                                         <td
                                                             class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                            {{ $personal->personal->servicio->nombre }}</td>
+                                                            {{ $personal->personal->servicio->nombre ?? 'Sin servicio asignado' }}</td>
                                                         <td
                                                             class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
                                                             <a class="p-2 bg-yellow-500 text-black rounded-xl" href="{{ route('personal.edit', $personal->id) }}"><i class="fa-solid fa-pencil"></i> Editar</a>
                                                             <a class="btn-eliminar p-2 bg-red-200 text-red-700 rounded-xl" href="{{ route('personal.delete', $personal->id) }}"><i class="fa-solid fa-trash"></i> Eliminar</a>
                                                         </td>
                                                     </tr>
-                                                     @endif
                                                 @empty
                                                     <td colspan="4" class="px-6 py-4 text-black">
-                                                        <center>Sin registros</center>
+                                                        <center></center>
                                                     </td>
                                                 @endforelse
                                            
@@ -80,19 +78,11 @@
                                                     </td>
                                                     <td
                                                             class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                        @if($personal->id_servicio == 0)
-                                                            Sin asignar
-                                                        @else
-                                                        {{ $personal->area->nombre }}
-                                                        @endif
+                                                         {{ $personal->area->nombre ?? 'Sin asignar' }}
                                                             </td>
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900">
-                                                        @if($personal->id_servicio == 0)
-                                                            Sin asignar
-                                                        @else
-                                                        {{ $personal->servicio->nombre }}
-                                                        @endif
+                                                        {{ $personal->servicio->nombre ?? 'Sin asignar' }}
                                                     </td>
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-900 space-x-4">
@@ -108,6 +98,11 @@
                                         @endif
                                     </tbody>
                                 </table>
+                                <div class="mt-4">
+                                    @if(!request()->has('personal'))
+                                     {{$personales->links()}}
+                                    @endif
+                                </div>
                             </div>
                         </div>
                     </div>

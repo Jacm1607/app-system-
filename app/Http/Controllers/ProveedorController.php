@@ -10,8 +10,8 @@ class ProveedorController extends Controller
 {
     public function index (Request $request) {
         privilegio('proveedor-index');
-        if (isset($request->proveedor)) {
-            $proveedores = Proveedor::where('razon_social', 'LIKE', "%$request->proveedor%")->where('estado', '1')->get();
+        if (isset($request->razon_social)) {
+            $proveedores = Proveedor::where('razon_social', 'LIKE', "%$request->razon_social%")->where('estado', '1')->get();
         } else {
             $proveedores = Proveedor::where('estado', '1')->get();
         }

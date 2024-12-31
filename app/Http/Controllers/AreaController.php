@@ -25,9 +25,10 @@ class AreaController extends Controller
     public function store(Request $request) {
         privilegio('area-store');
         $request->validate([
-            'nombre' => 'required|unique:areas,nombre|max:255',
+            'nombre' => 'alpha|required|unique:areas,nombre|max:255',
         ],[
             'nombre.unique' => 'Este nombre ya esta siendo usado.',
+            'nombre.alpha' => 'Ingrese solo letras.',
             'nombre.required' => 'Campo requerido.'
         ]);
         $area = new Area();
